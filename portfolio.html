@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Gaurank M. Patil</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+<style>
+
+.floating-label-form-group {
+    position: relative;
+    border-bottom: none;
+}
+
+.masthead .masthead-subheading {
+    font-size:2.0rem;
+}
+
+.lead {
+	text-align: justify;
+}
+
+.bg-primary {
+    background-color: #2f91a6 !important;
+}
+
+.navbar {
+    border-radius: 4px;
+}
+
+.fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.text-primary {
+    color: #2f91a6 !important;
+}
+
+.header {
+  padding: 8px 16px;
+  background: #2f91a6;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* align-items: center; */
+    /* -webkit-box-pack: justify; */
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+    padding: .5rem 2rem;
+	width:100%;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 5px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: -10px;
+    font-size: 2rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.rounded {
+    border-radius: 13.5rem !important;
+}
+
+.carousel-control.left {
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+.carousel-control.right {
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+.carousel-indicators {
+   width: auto;
+}
+
+.carousel-indicators .active {
+    width: 8px;
+    height: 8px;
+    padding: 5px;
+	border-radius: 40px;
+    background-color: #fff;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+	padding: 5px;
+	
+}
+
+.img {
+	margin-top:25%;
+	width: 55%;
+	border-radius: 50%;
+}
+
+a {
+    color: #75a59c;
+    text-decoration: none;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.social_icons{
+	font-size:35px;
+	float:left;
+}
+
+.portfolio-item{
+	color: black;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.08);
+    border-color: #fff;
+    border-radius: 10px;
+    transition: all 300ms linear 0s;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.frame{
+	margin:1%;
+}
+
+.lead{
+	font-size:2.0rem;
+}
+
+.primary_btn {
+    display: inline-block;
+    background-image: linear-gradient(to right,#8490ff 0%,#62bdfc 48%,#8490ff 100%);
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 38px;
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-size: 200% auto;
+}
+
+</style>
+
+<body id="page-top">
+	<div class="header" id="myHeader">
+		<div class="container-fluid">
+			<div class="row-fluid">
+			<!-- MENU BAR TITLE -->
+				<div id="menubar-title" class="noselect">
+					<h2 style="display:inline;">GP</h2>
+				</div>
+			<!-- End of MENU BAR TITLE -->
+			<!-- MENU BAR ITEMS -->
+				<div class="navbar">
+				  <a href="index.html">Home</a>
+				  <a href="portfolio.html">Portfolio</a>
+				  <a href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Resume</a>
+				</div>
+			<!-- End of MENU BAR ITEMS -->
+			</div>
+		</div>
+	</div>
+			<!-- Portfolio Section -->
+			<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;">
+				<div class="container-fluid">
+
+				<!-- Portfolio Section Heading -->
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Work</h2>
+
+				<!-- Icon Divider -->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+						<div class="divider-custom-icon">
+						  <i class="fa fa-star" aria-hidden="true"></i>
+						</div>
+					<div class="divider-custom-line"></div>
+				</div>
+				
+				<!-- Portfolio Grid Items -->
+				<div class="row">
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+							<div class="feature_item">
+								<img src="img/portfolio/illu2.jpg" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">ERFX</h2>
+						</div>
+						
+					</div>
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/mobile.jpg" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">Mobile Design</h2>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/wip.jpg" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">Query Portal</h2>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/mockup.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">Mockup Designs</h2>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/greenbay.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">Greenbay</h2>
+						</div>
+					</div>
+					<!-- Portfolio Item 6 -->
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/renderfarm.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">Ockam Render Farm</h2>
+						</div>
+					</div>
+					<!-- Portfolio Item 2 -->
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto" >
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/pivot.jpg" alt="" style="width: 100%;height: 254px;">
+							</div>
+							<h2 style="margin-bottom:20px;color:black;margin-top: 10px;">Pivot Table</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="page-section" id="contact">
+			<div class="container-fluid">
+			<br>
+			</div>
+		</section>
+		
+		<!-- Portfolio Section -->
+		<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;">
+			<div class="container-fluid">
+
+				<!-- Portfolio Section Heading -->
+				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Design Templates</h2>
+
+				<!-- Icon Divider -->
+				<div class="divider-custom">
+					<div class="divider-custom-line"></div>
+						<div class="divider-custom-icon">
+						  <i class="fa fa-star" aria-hidden="true"></i>
+						</div>
+					<div class="divider-custom-line"></div>
+				</div>
+			
+				<div class="row">
+					<div class="col-md-4 col-lg-4">
+						<div class="portfolio-item mx-auto" style="max-width: 40rem;">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
+							<div class="feature_item">
+								<img src="img/portfolio/Untitled9.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="portfolio-item mx-auto" style="max-width: 40rem;">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/Untitled8.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="portfolio-item mx-auto" style="max-width: 40rem;">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/ecagileloginpageV3.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4">
+						<div class="portfolio-item mx-auto" style="max-width: 40rem;">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<div class="feature_item">
+								<img src="img/portfolio/ecagileloginpageV3.png" alt="" style="width: 100%;height: 254px;">
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		  
+		<section class="copyright py-4 text-center text-white" style="font-size: 20px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" style="text-align:center;">
+						<h2>Let's Connect</h2>
+						<h4>Feel free to reach out for any oppurtunities or just a friendly hello!</h4>
+						<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a>
+						<h4>Copyright ©2019 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+		<div class="scroll-to-top d-lg-none position-fixed ">
+			<a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+			  <i class="fa fa-chevron-up"></i>
+			</a>
+		</div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+  <script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+  </script>
+  <script>
+	$('#myCarousel').carousel({
+	  interval: 3000,
+	  cycle: true
+	}); 
+  </script>
+
+</body>
+
+</html>
+
+
+
+

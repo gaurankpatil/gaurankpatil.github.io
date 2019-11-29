@@ -200,25 +200,74 @@ a {
     margin-right: 20px;
 }
 
+.topnav {
+    overflow: hidden;
+    /* background-color: #333; */
+    display: inline-block;
+    float: right;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: -2px;
+	font-weight:600;
+}
+
+.topnav a:hover {
+  color: black;
+  font-weight:600;
+}
+
+.topnav a.active {
+  color: white;
+  font-weight:600;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
 
 </style>
 
 <body id="page-top">
-	<div class="header" id="myHeader">
-		<div class="container-fluid">
-			<div class="row-fluid">
-			<!-- MENU BAR TITLE -->
-				<div id="menubar-title" class="noselect">
-					<h1 style="display:inline;">GP</h1>
-				</div>
-			<!-- End of MENU BAR TITLE -->
-			<!-- MENU BAR ITEMS -->
-				<div class="navbar">
-				  <a href="index.html">Home</a>
-				  <a href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Resume</a>
-				</div>
-			<!-- End of MENU BAR ITEMS -->
-			</div>
+	<div id="menubar-title" class="noselect header">
+		<h2 style="display:inline;">Gaurank M. Patil</h2>
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Home</a>
+			<a href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Resume</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
 	</div>
 		<!-- Portfolio Section -->
@@ -369,6 +418,16 @@ a {
 		  }
 		}
   </script>
+  <script>
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+	</script>
 
 </body>
 

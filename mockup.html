@@ -239,21 +239,16 @@ a {
 
 .topnav {
     overflow: hidden;
-    /* background-color: #333; */
-    display: inline-block;
-    float: right;
 }
 
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 0px 35px;
     text-decoration: none;
     font-size: 20px;
-    margin-top: -2px;
 	font-weight:600;
+	padding: 14px 16px;
 }
 
 .topnav a:hover {
@@ -290,15 +285,31 @@ a {
     display: block;
     text-align: left;
   }
+  
+  .topnav.responsive a .float {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
+
+a:hover {
+    color: #117964;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: 5px !important;
+    outline-offset: -2px;
+}
+
 
 
 
 </style>
 
 <body id="page-top">
-	<div id="menubar-title" class="noselect header">
-		<h2 style="display:inline;">Gaurank M. Patil</h2>
+	<div id="menubar-title" class="header">
 		<div class="topnav" id="myTopnav">
 			<a href="index.html">Home</a>
 			<a href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Resume</a>

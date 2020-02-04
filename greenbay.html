@@ -172,7 +172,6 @@
     border: 1px solid #fff;
     border-radius: 10px;
 	padding: 5px;
-	
 }
 
 .carousel-indicators {
@@ -202,21 +201,16 @@ a {
 
 .topnav {
     overflow: hidden;
-    /* background-color: #333; */
-    display: inline-block;
-    float: right;
 }
 
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 0px 35px;
     text-decoration: none;
     font-size: 20px;
-    margin-top: -2px;
 	font-weight:600;
+	padding: 14px 16px;
 }
 
 .topnav a:hover {
@@ -253,15 +247,31 @@ a {
     display: block;
     text-align: left;
   }
+  
+  .topnav.responsive a .float {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
+
+a:hover {
+    color: #117964;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: 5px !important;
+    outline-offset: -2px;
+}
+
 
 
 
 </style>
 
 <body id="page-top">
-	<div id="menubar-title" class="noselect header">
-		<h2 style="display:inline;">Gaurank M. Patil</h2>
+	<div id="menubar-title" class="header">
 		<div class="topnav" id="myTopnav">
 			<a href="index.html">Home</a>
 			<a href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Resume</a>
@@ -325,16 +335,6 @@ a {
 									  <img src="img/portfolio/greenbaylocator.png">           
 									</div>
 								</div>
-
-								<!-- Left and right controls -->
-								<a class="left carousel-control" href="#myCarousel4" data-slide="prev">
-								  <span class="glyphicon glyphicon-chevron-left" style="display:none;"></span>
-								  <span class="sr-only">Previous</span>
-								</a>
-								<a class="right carousel-control" href="#myCarousel4" data-slide="next">
-								  <span class="glyphicon glyphicon-chevron-right" style="display:none;"></span>
-								  <span class="sr-only">Next</span>
-								</a>
 							</div>
 						</div>
 						<br></br>
@@ -342,7 +342,7 @@ a {
 							<div class="col-lg-12">
 								<h2 style="text-align:center;color:black;">GreenBay Essentials (Work In Progress)</h2>
 								<br>
-								<p style="font-size: 20px;color:black;">
+								<p style="font-size: 20px; color:black; font-weight: 600; text-align: justify;">
 									GreenBay Essential is an GNC startup established in New York(USA). GreenBay Essentials.com is an ecommerce website with an aim to go worldwide in the market.
 									This website is build and developed in Wordpress and Php technologies.
 									(The website is still under development)

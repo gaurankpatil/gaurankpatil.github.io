@@ -32,7 +32,6 @@
   gtag('config', 'UA-139429182-2');
 </script>
 
-
 </head>
 <style>
 
@@ -167,17 +166,27 @@
 
 .carousel-indicators li {
     display: inline-block;
-    width: 5px;
-    height: 5px;
-    margin: 1px;
+    width: 3px;
+    height: 3px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #000\9;
-    background-color: rgba(0,0,0,0);
+    background-color: #2f91a6;
     border: 1px solid #fff;
     border-radius: 10px;
 	padding: 5px;
-	
+}
+
+.carousel-indicators {
+    bottom: -25px;
+}
+
+.carousel-control {
+    width: 1%;
+}
+
+.carousel-control.right {
+    right: -18px;
 }
 
 .img {
@@ -237,21 +246,16 @@ a {
 
 .topnav {
     overflow: hidden;
-    /* background-color: #333; */
-    display: inline-block;
-    float: right;
 }
 
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
-    padding: 0px 35px;
     text-decoration: none;
     font-size: 20px;
-    margin-top: -2px;
 	font-weight:600;
+	padding: 14px 16px;
 }
 
 .topnav a:hover {
@@ -288,14 +292,30 @@ a {
     display: block;
     text-align: left;
   }
+  
+  .topnav.responsive a .float {
+    float: none;
+    display: block;
+    text-align: right;
+  }
 }
+
+a:hover {
+    color: #117964;
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: 5px !important;
+    outline-offset: -2px;
+}
+
 
 
 </style>
 
 <body id="page-top">
-	<div id="menubar-title" class="noselect header">
-		<h2 style="display:inline;">Gaurank M. Patil</h2>
+	<div id="menubar-title" class="header">
 		<div class="topnav" id="myTopnav">
 			<a href="index.html">Home</a>
 			<a href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Resume</a>
@@ -337,7 +357,7 @@ a {
 								
 								<div class="carousel-inner w3-content w3-section">
 									<div class="item active"> 
-										<img src="img/portfolio/HomeScreen.png">         
+										<img src="img/portfolio/HomeScreen.png" height="10px">         
 									</div>
 									<div class="item"> 
 									  <img src="img/portfolio/LanguagePage.png">        
@@ -354,12 +374,12 @@ a {
 									<div class="item"> 
 									  <img src="img/portfolio/DetailView.png">        
 									</div>
-									<div class="item"> 
+									<div class="item">
 									  <img src="img/portfolio/ProfileView.png">           
 									</div>
 								</div>
 
-								<!-- Left and right controls -->
+								<!-- Left and right controls 
 								<a class="left carousel-control" href="#myCarousel1" data-slide="prev" style="left: -53px;">
 								  <span class="glyphicon glyphicon-chevron-left"></span>
 								  <span class="sr-only">Previous</span>
@@ -367,14 +387,15 @@ a {
 								<a class="right carousel-control" href="#myCarousel1" data-slide="next" style="right: -70px;">
 								  <span class="glyphicon glyphicon-chevron-right"></span>
 								  <span class="sr-only">Next</span>
-								</a>
+								</a>-->
 							</div>
 						</div>
 						
 						<div class="row">
 							<div class="col-lg-12" style="text-align:center;">
 								<h1 style="text-align:center;color:black;margin-top:20px;">Mobile App EC Agile</h1>
-								<p style="font-size: 20px;color:black;">
+								<br>
+								<p style="font-size: 20px; color:black; font-weight: 600; text-align: justify;">
 								EC Agile is an swift version of the Expense Management System  designed and developed to simplify and ease user experience by managing theor expenses.
 								It is a lighter version of the original product from the user perspective of the application incorporating the improvents in the overall design and feel of the application.
 								This app offers added functionality of listing the vouchers, approving and editing functionality. Also has the feature of capturing the recipts and storing them as necessary attachements for easy approval of vouchers.

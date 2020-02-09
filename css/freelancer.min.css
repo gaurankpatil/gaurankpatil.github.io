@@ -9896,7 +9896,7 @@ a.text-dark:hover {
 	transition: top .3s ease, opacity .3s ease;
 	vertical-align: middle;
 	vertical-align: baseline;
-	opacity: 0
+	opacity: 0;
 }
 .floating-label-form-group:not(:first-child) {
 	padding-left: 14px;

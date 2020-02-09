@@ -20,6 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   
+  
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   
@@ -70,9 +71,8 @@
 }
 
 .header {
-  padding: 8px 16px;
-  background-image: linear-gradient(to right,#8490ff 0%,#62bdfc 48%,#8490ff 100%);
-  color: #f1f1f1;
+  padding: 0px 32%;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .content {
@@ -139,7 +139,7 @@
 }
 
 .rounded {
-    border-radius: 13.5rem !important;
+    border-radius: 4.5rem !important;
 }
 
 .carousel-control.left {
@@ -218,10 +218,10 @@ a {
 
 .primary_btn {
     display: inline-block;
-    background-image: linear-gradient(to right,#8490ff 0%,#62bdfc 48%,#8490ff 100%);
-    color: #fff;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #119078;
     font-family: "Roboto",sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 50px;
     padding: 0 38px;
@@ -308,6 +308,38 @@ a:focus {
     outline-offset: -2px;
 }
 
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:active {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  color: white;
+}
+
+.primary_btn:hover {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 3px 0 
+rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
+    rgba(0,0,0,0.2);
+}
+
 </style>
 
 <body id="page-top">
@@ -328,29 +360,29 @@ a:focus {
 			<div class="col-lg-6">
 				<div class="masthead text-white text-center ">
 					<h2 class="masthead-subheading mb-0" style="color:black;font-size: 4.0rem;text-align: justify;word-break: break-all;">Hello, I'm Gaurank M. Patil</h2><br>
-					<p class="masthead-subheading font-weight-light mb-0" style="color:black;text-align: justify;">An Indian born UX/UI Designer and Developer with 4 years of experience, currently looking for opportunities in USA and Canada. 
+					<p class="masthead-subheading font-weight-light mb-0" style="color:black;text-align: justify;">An Indian born UX/UI Designer and Developer with 4+ years of experience.
 					Involved in designing and usability, passionate about designing digital experiences that leave a positive impact on people, 
 					environment and the society. My portfolio includes user interface design, brand & identity design, illustration, and art & creative direction.
 					I've worked on web and product solutions for a range of startups, in a variety of industries.
 					Currently working as a Senior UX/UI Designer and Developer at Expenzing(India).</p>
 					<div class="social_icons">
 						<a href="https://www.linkedin.com/in/gaurank-patil-511600143"><i class="fab fa-linkedin"></i></a>
-						<a href="#"><i class="fab fa-skype"></i></a>
-						<a href="mailto:pgaurank@gmail.com"><i class="fas fa-envelope-square"></i></a>
-						<a href="https://dribbble.com/pgaurank"><i class="fab fa-dribbble"></i></a>
+						<a href="#" style="padding-left:10px;"><i class="fab fa-skype"></i></a>
+						<a href="mailto:pgaurank@gmail.com" style="padding-left:10px;"><i class="fas fa-envelope-square"></i></a>
+						<a href="https://dribbble.com/pgaurank" style="padding-left:10px;"><i class="fab fa-dribbble"></i></a>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="masthead text-center ">
-					<img class="img rounded mb-5" src="img/portfolio/pic.jpg">
+					<img class="img rounded" style="width:70%;" src="img/portfolio/pic.jpg">
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(to right,#8490ff 0%,#62bdfc 48%,#8490ff 100%) !important; opacity: 90%;">
+	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); !important; opacity: 90%;">
 		<div class="container">
 
 			<!-- Portfolio Section Heading -->
@@ -398,7 +430,7 @@ a:focus {
 						<a href="query.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"></div>
 							<div class="feature_item">
-								<img src="img/portfolio/wip.jpg" alt="" style="width: 60%;height: 170px;padding: 10px;">
+								<img src="img/portfolio/wip.png" alt="" style="width: 100%;height: 170px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Query Portal</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
@@ -479,7 +511,6 @@ a:focus {
 								<img src="img/portfolio/mockup.png" alt="" style="width: 100%;height: 170px;padding: 5px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">More Designs</h3>
-							<!-- <p style="color: #848484;font-size: 1.3rem;text-transform: none;"> UX/Visual Designs</p> -->
 						</a>
 					</div>
 				</div>
@@ -520,7 +551,7 @@ a:focus {
 	</section>
 			
 	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" style="background-image: linear-gradient(to right,#8490ff 0%,#62bdfc 48%,#8490ff 100%) !important; opacity: 90%;">
+	<section class="page-section portfolio bg-primary text-white mb-0" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); !important; opacity: 90%;">
 		<div class="container">
 
 			<!-- Portfolio Section Heading -->
@@ -720,20 +751,19 @@ a:focus {
 						In my spare time I enjoy travelling and playing games.</p>
 					<p class="lead masthead-subheading font-weight-light">I'm seeking out challenging and rewarding projects worldwide in my field of expertise for an organization of high repute and where I can acquire an opportunity, to learn and grow, and take my skill set to a whole new level.
 					</p>
-					<a class="primary_btn" href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Download CV</a>
+					<a class="primary_btn waves-effect waves-light ripple" href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Download CV</a>
 				</div>
 			</div>
 			<!-- Contact Section Form -->
 		</div>
 	</section>
-		
 	<section class="copyright py-4 text-center text-white" style="font-size: 20px;">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12" style="text-align:center;">
 					<h2>Let's Connect</h2>
 					<h4>Feel free to reach out for any oppurtunities or just a friendly hello!</h4>
-					<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a><br></br>
+					<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a><br>
 					<h4>Copyright ©2019 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h4>
 				</div>
 			</div>

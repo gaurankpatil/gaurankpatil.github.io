@@ -303,7 +303,44 @@ a:focus {
     outline-offset: -2px;
 }
 
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
 
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 
 </style>
@@ -322,7 +359,7 @@ a:focus {
 		<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;margin: 0rem;">
 			<div class="container-fluid">
 				<!-- Portfolio Section Heading -->
-				<h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">More Design & Templates</h1>
+				<h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Other Designs & Templates</h1>
 
 				<!-- Icon Divider -->
 				<div class="divider-custom">
@@ -332,6 +369,60 @@ a:focus {
 						</div>
 					<div class="divider-custom-line"></div>
 				</div>
+				
+				<div class="row">
+					<div class="col-md-3 col-lg-3">
+						<div class="portfolio-item mx-auto">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							</div>
+							<img src="img/portfolio/template.jpg" alt="Mountains" style="width:100%">
+							<div class="feature_item" style="color:black;">
+								<h2>UX/UI Design</h2>
+							</div>
+						</div>
+					</div>
+				
+					<div class="column">
+						<div class="content">
+							<img src="img/portfolio/template.jpg" alt="Mountains" style="width:100%">
+							<h3>Dashboard</h3>
+							<p>An simple and responsive dashboard with advanced sidenav and featured cards for ease of user interface and experience.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="img/portfolio/Calender.png" alt="Lights" style="width:100%">
+							<h3>Calender Component</h3>
+							<p>An advance version of calander with gradient pattern color. Alsi provision of time display and to do events section below.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="img/portfolio/Tablet 7inch.png" alt="Nature" style="width:100%">
+							<h3>Mobile sidenav</h3>
+							<p>An basic prototype of a Mobile sidenav designed in figma</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="img/portfolio/invoice.png" alt="Mountains" style="width:100%">
+							<h3>Mobile App Dashboard</h3>
+							<p>Invoice dashboard designed and developed for business expense users to add or track their expenses anytime, anywhere in the world.</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<img src="img/portfolio/bottomSheet.png" alt="Mountains" style="width:100%">
+							<h3>Mobile App Component</h3>
+							<p>Bottom Sheet purely designed and developed using Bootstrap 4 and Css.</p>
+						</div>
+					</div>
+					<!-- END GRID -->
+				</div>
+
+				
+				
+				
 				
 				<div class="portfolio-modal">
 					<div class="container">
@@ -460,11 +551,3 @@ a:focus {
 </body>
 
 </html>
-
-
-
-
-
-
-
-

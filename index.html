@@ -12,6 +12,7 @@
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -71,7 +72,6 @@
 }
 
 .header {
-  padding: 0px 32%;
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
@@ -193,6 +193,7 @@ a {
 .social_icons{
 	font-size:35px;
 	float:left;
+	margin-left: -5px;
 }
 
 .portfolio-item{
@@ -247,23 +248,24 @@ a {
 }
 
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    display: inline-block;
+    color: #1170c1;
     text-decoration: none;
     font-size: 20px;
 	font-weight:600;
-	padding: 14px 16px;
+	padding: 15px 15px;
 }
 
 .topnav a:hover {
   color: black;
-  font-weight:600;
 }
 
 .topnav a.active {
   color: white;
-  font-weight:600;
+}
+
+a:hover:not(.active) {
+    background-color: #6eabe0;
 }
 
 .topnav .icon {
@@ -340,6 +342,27 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
     rgba(0,0,0,0.2);
 }
 
+.fa {
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+body {
+	background-color: #fbfcfda1;
+}
+
+<!-- .eQCmj { -->
+    <!-- width: 100px; -->
+    <!-- height: 90px; -->
+    <!-- background-color: white; -->
+    <!-- text-decoration: none; -->
+    <!-- border-radius: 50%; -->
+    <!-- border: 3px solid teal; -->
+    <!-- padding: 5px; -->
+	<!-- display: inline-block; -->
+<!-- } -->
 </style>
 
 <body id="page-top">
@@ -357,7 +380,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 	</div>
 	<div class="container-fluid">
 		<div class="row align-items-center justify-content-between">
-			<div class="col-lg-6">
+			<div class="col-lg-7">
 				<div class="masthead text-white text-center ">
 					<h2 class="masthead-subheading mb-0" style="color:black;font-size: 4.0rem;text-align: justify;word-break: break-all;">Hello, I'm Gaurank M. Patil</h2><br>
 					<p class="masthead-subheading font-weight-light mb-0" style="color:black;text-align: justify;">An Indian born UX/UI Designer and Developer with 4+ years of experience.
@@ -366,10 +389,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					I've worked on web and product solutions for a range of startups, in a variety of industries.
 					Currently working as a Senior UX/UI Designer and Developer at Expenzing(India).</p>
 					<div class="social_icons">
-						<a href="https://www.linkedin.com/in/gaurank-patil-511600143"><i class="fab fa-linkedin"></i></a>
-						<a href="#" style="padding-left:10px;"><i class="fab fa-skype"></i></a>
-						<a href="mailto:pgaurank@gmail.com" style="padding-left:10px;"><i class="fas fa-envelope-square"></i></a>
-						<a href="https://dribbble.com/pgaurank" style="padding-left:10px;"><i class="fab fa-dribbble"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=+919870355502"><img src="img/portfolio/iconfinder_whatsapp_2141620.png" alt="" style="height: 60px; padding: 5px;"></a>
+						<a href="https://www.linkedin.com/in/gaurank-patil-511600143"><img src="img/portfolio/iconfinder_linkedin_2141633.png" alt="" style="height: 60px; padding: 5px;"></a>
+						<a href="skype:pgaurank?chat"><img src="img/portfolio/iconfinder_skype_2141628.png" alt="" style="height: 60px; padding: 5px;"></a>
+						<a href="mailto:pgaurank@gmail.com"><img src="img/portfolio/iconfinder_mail_2141632.png" alt="" style="height: 60px; padding: 5px;"></a>
+						<a href="https://dribbble.com/pgaurank"><img src="img/portfolio/iconfinder_dribbble_2141638.png" alt="" style="height: 60px; padding: 5px;"></a>
 					</div>
 				</div>
 			</div>
@@ -382,7 +406,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 	</div>
 	
 	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); !important; opacity: 90%;">
+	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)!important; opacity: 90%;">
 		<div class="container">
 
 			<!-- Portfolio Section Heading -->
@@ -510,7 +534,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 							<div class="feature_item">
 								<img src="img/portfolio/mockup.png" alt="" style="width: 100%;height: 170px;padding: 5px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">More Designs</h3>
+							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Other Designs</h3>
 						</a>
 					</div>
 				</div>

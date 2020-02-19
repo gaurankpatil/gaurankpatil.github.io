@@ -4511,14 +4511,18 @@ input[type=submit].btn-block {
 	padding: 1.25rem
 }
 .card-title {
-	margin-bottom: .75rem
+	margin-bottom: .75rem;
+	color: black;
 }
 .card-subtitle {
 	margin-top: -.375rem;
-	margin-bottom: 0
+	margin-bottom: 0;
+	color: black;
 }
 .card-text:last-child {
-	margin-bottom: 0
+	margin-bottom: 0;
+	color: black;
+	font-size: 15px;
 }
 .card-link:hover {
 	text-decoration: none

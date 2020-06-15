@@ -16,9 +16,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -32,6 +31,8 @@
 
   gtag('config', 'UA-139429182-2');
 </script>
+
+
 </head>
 <style>
 
@@ -188,7 +189,6 @@
 .carousel-control.right {
     right: -18px;
 }
-
 .img {
 	margin-top:25%;
 	width: 55%;
@@ -310,8 +310,45 @@ a:focus {
     outline-offset: -2px;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-
+.flexBox{
+	display: flex;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.label {
+    padding: 0rem;
+    font-size: 16px;
+    color: #000;
+}
+.div-block-24 {
+	line-height: 2em;
+}
+.paragraph-bigger {
+	color:#191a1f;
+	font-size: 16px;
+	line-height: 1.8em;
+	font-weight: 300;
+	text-transform: none;
+}
+.page-section {
+    padding: 3rem 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 
 <body id="page-top">
@@ -325,10 +362,10 @@ a:focus {
 		</div>
 	</div>
 		<!-- Portfolio Section -->
-		<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;margin: 0rem;">
+		<section class="page-section portfolio mb-0" style="background-color: #f9f9ff !important;margin: 0rem;">
 			<div class="container-fluid">
 				<!-- Portfolio Section Heading -->
-				<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Pivot Table</h2>
+				<h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Pivot Table</h1>
 
 				<!-- Icon Divider -->
 				<div class="divider-custom">
@@ -341,24 +378,35 @@ a:focus {
 				
 				<div class="portfolio-modal">
 					<div class="container">
-						<div class="row justify-content-center">
-							<div id="myCarousel3" class="carousel slide pointer-event" data-ride="carousel">
-								<!-- Indicators -->
-								<div class="carousel-inner w3-content w3-section">
-									<div class="item active"> 
-									  <img src="img/portfolio/pivottable.png">        
-									</div>
+						<div style="text-align: center;"><img src="img/portfolio/pivottable.png"></div>
+						<br></br>
+						<div class="overview-container flexBox">
+							<div class="wider-content-div" style="width: 100%;">
+								<h1 style="margin-bottom:25px;">Pivot Table</h1>
+								<div class="paragraph-bigger">
+								A pivot table is a data summarization tool that is used in the context of data processing. Pivot tables are used to summarize, sort, reorganize, group, count, total or average data stored in a database. 
+								This table can be fully customised according to client requirements. Pivot table is an feature added in the EMS product with fully customised styling. 
+								It allows its users to transform columns into rows and rows into columns.
+								It's an customizable open-source Javascript Pivot Table (aka Pivot Grid, Pivot Chart, Cross-Tab) with drag'n'drop functionality.
 								</div>
 							</div>
-						</div>
-						<div class="row justify-content-center">
-							<div class="col-lg-12">
-								<br>
-								<p style="font-size: 20px; color:black; font-weight: 600; text-align: justify;">Designed and Implemented Pivot component with custom styling and designing
-								A pivot table is a data summarization tool that is used in the context of data processing. 
-								Pivot tables are used to summarize, sort, reorganize, group, count, total or average data stored in a database. 
-								It allows its users to transform columns into rows and rows into columns.
-								Its an customizable open-source Javascript Pivot Table (aka Pivot Grid, Pivot Chart, Cross-Tab) with drag'n'drop functionality.</p>
+							<div class="div-block-16" style="width:35%; margin-left: 10%;">
+								<div class="div-block-24">
+									<h2 class="label bigger">Year</h2>
+									<div class="paragraph light">2020</div>
+								</div>
+								<div class="div-block-24">
+									<h2 class="label bigger">Project</h2>
+									<div class="paragraph light">Pivot Table</div>
+								</div>
+								<div class="div-block-24">
+									<h2 class="label bigger">Technologies</h2>
+									<div class="paragraph light">HTML, CSS, Pivot JS</div>
+								</div>
+								<div class="div-block-24">
+									<h2 class="label bigger">Role</h2>
+									<div class="paragraph light">UX Research, UI/UX Design, UI Developer</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -366,13 +414,10 @@ a:focus {
 			</div>
 		</section>
 		  
-		<section class="copyright py-4 text-center text-white" style="font-size: 20px;">
+		<section class="copyright py-4 text-center text-white" style="font-size: 20px;text-align:center;">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12" style="text-align:center;">
-						<h2>Let's Connect</h2>
-						<h4>Feel free to reach out for any oppurtunities or just a friendly hello!</h4>
-						<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a>
+					<div class="col-md-12">
 						<h4>Copyright ©2019 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h4>
 					</div>
 				</div>
@@ -425,10 +470,7 @@ a:focus {
 	</script>
 
 </body>
-
 </html>
-
-
 
 
 

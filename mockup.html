@@ -37,7 +37,9 @@
 
 </head>
 <style>
-
+.card {
+    margin-bottom: 10px;
+}
 .header {
   padding: 5px 15px;
   background-image: linear-gradient(to right,#8490ff 0%,#62bdfc 48%,#8490ff 100%);
@@ -116,6 +118,84 @@ a:focus {
     outline: 5px !important;
     outline-offset: -2px;
 }
+
+
+.grid figure {
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+	
+}
+
+figure.effect-lily img {
+	width: 100%;
+}
+
+
+figure.effect-lily h1,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,-140px,0);
+	transform: translate3d(0,-140px,0);
+	opacity: 0;
+}
+
+figure.effect-lily h1 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	font-size: 2.3rem;
+    font-weight: 700;
+	color: black;
+	text-align: center;
+	
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 0.5;
+}
+
+figure.effect-lily:hover h1,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,-155px,0);
+	transform: translate3d(0,-155px,0);
+    opacity: 1;
+    margin: auto;
+}
+
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
 </style>
 
 <body id="page-top">
@@ -128,83 +208,118 @@ a:focus {
 			</a>
 		</div>
 	</div>
-		<!-- Portfolio Section -->
-		<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;margin: 0rem;">
-			<div class="container-fluid">
-				<!-- Portfolio Section Heading -->
-				<h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Other Designs & Templates</h1>
+	<!-- Portfolio Section -->
+	<section class="page-section portfolio bg-primary text-white mb-0" style="background-color: #f9f9ff !important;margin: 0rem;">
+		<div class="container-fluid">
+			<!-- Portfolio Section Heading -->
+			<h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Other Designs & Templates</h1>
 
-				<!-- Icon Divider -->
-				<div class="divider-custom">
-					<div class="divider-custom-line"></div>
-						<div class="divider-custom-icon">
-						  <i class="fa fa-star" aria-hidden="true"></i>
-						</div>
-					<div class="divider-custom-line"></div>
-				</div>
-				<div class="portfolio-modal">
-					<div class="container">
-						<div class="row justify-content-center" style="padding-bottom: 25px;">
+			<!-- Icon Divider -->
+			<div class="divider-custom">
+				<div class="divider-custom-line"></div>
+					<div class="divider-custom-icon">
+					  <i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				<div class="divider-custom-line"></div>
+			</div>
+			<div class="portfolio-modal">
+				<div class="container">
+					<div class="row justify-content-center" style="padding-bottom: 25px;">
 							<div class="col-md-6">
-								<div class="card">
-									<img class="card-img-top" src="img/portfolio/invoice.png" alt="Card image" style="width: 23%;margin-left: auto;margin-right: auto;margin-top: 10%;height: 280px;">
-									<div class="card-body" style="text-align: center;">
-									  <h4 class="card-title">Mobile App Dashboard</h4>
-									  <p class="card-text">Invoice dashboard designed and developed for business expense users to add or track their expenses anytime, anywhere in the world.</p>
-									</div>
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/Login_Page_Design_2.png" style="height: 410px;">
+										<h1>Login Page Template</h1>						
+									</figure>
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="card">
-									<img class="card-img-top" src="img/portfolio/bottomSheet.png" alt="Card image" style="width: 23%;margin-left: auto;margin-right: auto;margin-top: 10%;height: 280px;">
-									<div class="card-body" style="text-align: center;">
-									  <h4 class="card-title">Mobile App Component</h4>
-									  <p class="card-text">Bottom Sheet purely designed and developed using Bootstrap 4 and CSS. <br></br></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row justify-content-center" style="padding-bottom: 25px;">
-							<div class="col-md-6">
-								<div class="card">
-									<img class="card-img-top" src="img/portfolio/template.jpg" alt="Card image" style="width: 80%; margin-left: auto; margin-right: auto; margin-top: 10%; height: 410px;">
-									<div class="card-body" style="text-align: center;">
-									  <h4 class="card-title">Responsive Dashboard Design</h4>
-									</div>
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/Login_Page_Design.png" style="height: 410px;">
+										<h1>Login Page Template</h1>						
+									</figure>
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="card">
-									<img class="card-img-top" src="img/portfolio/Calender.png" alt="Card image" style="width: 95%; height: 410px; margin-left: auto; margin-right: auto; margin-top: 10%;">
-									<div class="card-body" style="text-align: center;">
-									  <h4 class="card-title">Calender Component Design</h4>
-									</div>
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/Login_Page_Design_1.png" style="height: 410px;">
+										<h1>Login Page Template</h1>						
+									</figure>
 								</div>
 							</div>
-						</div>
+							<div class="col-md-6">
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/Card_Layout.png" style="height: 410px; width: 95%;">
+										<h1>Card Layout with inforgraphic images</h1>						
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/invoice.png" alt="Card image" style="width: 40%;height: 410px;padding: 40px;">
+										<h1>Mobile App Dashboard Template</h1>						
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/bottomSheet.png" style="width: 40%;height: 410px;padding: 40px;">
+										<h1>Mobile App Component</h1>						
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/calender.png" alt="Card image" style="padding: 10px; height: 410px;">
+										<h1>Calender Component Design</h1>						
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/Tne_Webapp_date.png" alt="Card image" style="padding: 10px; height: 410px;">
+										<h1>Calender Component Design</h1>						
+									</figure>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="grid card">
+									<figure class="effect-lily" style="margin-bottom: -30px;">
+										<img class="card-img-top" src="img/portfolio/template.jpg" alt="Card image" style="height: 410px;">
+										<h1>Responsive Dashboard Template</h1>						
+									</figure>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="copyright py-4 text-center text-white" style="font-size: 20px;text-align:center;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>Let's Connect</h1>
-						<h4>Feel free to reach out for any oppurtunities or just a friendly hello!</h4>
-						<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a>
-						<h4>Copyright ©2019 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h4>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-		<div class="scroll-to-top d-lg-none position-fixed ">
-			<a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-			  <i class="fa fa-chevron-up"></i>
-			</a>
 		</div>
+	</section>
+	<section class="copyright py-4 text-center text-white" style="font-size: 20px;text-align:center;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Let's Connect</h1>
+					<h4>Feel free to reach out for any oppurtunities or just a friendly hello!</h4>
+					<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a>
+					<h4>Copyright ©2019 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-to-top d-lg-none position-fixed ">
+		<a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+		  <i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

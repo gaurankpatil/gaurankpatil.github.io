@@ -71,7 +71,7 @@
 }
 
 .header {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%);
 }
 
 .content {
@@ -153,7 +153,7 @@ a {
     cursor: pointer;
     box-shadow: 0 10px 30px 0 rgba(0,0,0,.08);s
     border-color: #fff;
-    padding: 35px 10px;
+    padding: 20px 20px;
     border-radius: 10px;
     transition: all 300ms linear 0s;
     background: #fff;
@@ -190,6 +190,7 @@ a {
 
 .topnav {
     overflow: hidden;
+	text-align: center;
 }
 
 .topnav a {
@@ -213,15 +214,19 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+  .topnav {
+    overflow: hidden;
+	text-align: left;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -339,7 +344,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 	</div>
 	
 	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)!important; opacity: 90%;">
+	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%)!important; opacity: 90%;">
 		<div class="container">
 
 			<!-- Portfolio Section Heading -->
@@ -357,11 +362,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 			<!-- Portfolio Grid Items -->
 			<div class="row">
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="erfx.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/illu2.jpg" alt="" style="width: 70%;height: 170px;padding: 5px;">
+								<img src="img/portfolio/illu2.jpg" alt="" style="width: 70%;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">ERFX</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Client Project </p>
@@ -369,23 +374,23 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="mobile.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/Mobile5.jpg" alt="" style="width: 70%;height: 170px;padding: 5px;">
+								<img src="img/portfolio/Mobile5.jpg" alt="" style="height: 160px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Mobile App</h3>
+							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">EMS Mobile App</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Client Project </p>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="ems.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/ems.png" alt="" style="height: 170px;padding: 15px;">
+								<img src="img/portfolio/ems.png" alt="" style="height: 160px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">EMS</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Client Project </p>
@@ -393,11 +398,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="query.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/wip.png" alt="" style="height: 170px;padding: 15px;">
+								<img src="img/portfolio/wip.png" alt="" style="height: 160px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Chat Box Component</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Client Project </p>
@@ -405,11 +410,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="pivot.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/pivot.png" alt="" style="width: 100%;height: 170px;padding: 25px;">
+								<img src="img/portfolio/pivot.png" alt="" style="width: 100%;height: 160px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Pivot Table Component</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Client Project </p>
@@ -417,11 +422,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="greenbay.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/greenbaylogo.png" alt="" style="width: 100%;height: 170px;padding: 40px;">
+								<img src="img/portfolio/greenbaylogo.png" alt="" style="width: 100%;height: 160px;padding: 40px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Greenbay Essentials</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Freelance Project </p>
@@ -429,11 +434,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="ockam.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/RenderSwarmlogo.png" alt="" style="width: 100%;height: 170px;padding: 25px;">
+								<img src="img/portfolio/RenderSwarmlogo.png" alt="" style="width: 100%;height: 160px;padding: 20px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Ockam Render Farm</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> In-House Project </p>
@@ -441,11 +446,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item" style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="info.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/info.jpg" alt="" style="width: 100%;height: 170px;padding: 5px;">
+								<img src="img/portfolio/info.jpg" alt="" style="height: 160px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Infographics</h3>
 							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:0px;"> Client Project </p>
@@ -453,13 +458,13 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
-					<div class="portfolio-item " style="padding: 0px 0px;">
+					<div class="portfolio-item">
 						<a href="mockup.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/mockup.png" alt="" style="width: 100%;height: 170px;padding: 5px;">
+								<img src="img/portfolio/mockup.png" alt="" style="height: 160px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">More Designs/Components</h3>
+							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;">Other Designs</h3>
 						</a>
 					</div>
 				</div>
@@ -525,7 +530,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 	</section>
 			
 	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); !important; opacity: 90%;">
+	<section class="page-section portfolio bg-primary text-white mb-0" style="background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%)!important; opacity: 90%;">
 		<div class="container">
 
 			<!-- Portfolio Section Heading -->
@@ -717,16 +722,14 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 				</div>
 				<div class="col-lg-7 col-md-12 col-sm-12 ml-auto">
 					<div class="paragraph-bigger">
-						Graduated from New York Institute of Technology (NY, USA) with a Master's degree in computer science with working experience in USA.
-						I'm passionate about creating better user experiences that are seamless and impactful with an interest in emerging technologies.
+						Graduated from New York Institute of Technology (NY, USA) with a Master's degree in computer science and working experience in USA.
+						I'm passionate about creating better user experiences that are seamless and impactful with an interest in emerging technologies. I enjoy using my skill set to empower people to accomplish their goals by creating digital and user friendly user experiences that make life easier.
 						Able to take ideas from concept to wireframe to prototype to production. 
 						Experience working with teams to brainstorm and whiteboard concepts. 
 						Creating wireframes at varying levels of fidelity, enjoy prototyping ideas, knowledgeable front-end coding experience and enjoy working with developers to build ideas out.</p>
-						I enjoy using my skill set to empower people to accomplish their goals by creating digital and user friendly user experiences that make life easier.
-						In my spare time I enjoy travelling and playing games.
-						I'm seeking out challenging and rewarding projects worldwide in my field of expertise for an organization of high repute and where I can acquire an opportunity, to learn and grow, and take my skill set to a whole new level.
+						Seeking out challenging and rewarding projects worldwide in my field of expertise for an organization of high repute and where I can acquire an opportunity, to learn and grow, and take my skill set to a whole new level.
 					</div>
-					<a class="primary_btn waves-effect waves-light ripple" href="https://drive.google.com/file/d/1xc7siKJy1mJ4dSrfHJPuh-2TBBKolZD6/view?usp=sharing">Download CV</a>
+					<a class="primary_btn waves-effect waves-light ripple" href="https://drive.google.com/file/d/1m_d6KFBtNz_agMAx7hO8LvjeTM3GlR9N/view?usp=sharing">Download CV</a>
 				</div>
 			</div>
 			<!-- Contact Section Form -->

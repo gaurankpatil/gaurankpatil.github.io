@@ -5147,7 +5147,7 @@ a.badge-dark:focus {
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
-	background-image: linear-gradient(120deg, #2bc0e4 100%, #eaecc6 100%);
+	background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
 	-webkit-transition: width .6s ease;
 	transition: width .6s ease
 }

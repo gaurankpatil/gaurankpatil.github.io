@@ -1,307 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+	<title>Gaurank M. Patil</title>
 
-  <title>Gaurank M. Patil</title>
+	<!-- Custom fonts for this theme -->
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- Custom fonts for this theme -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="css/freelancer.min.css" rel="stylesheet">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
-  
-  <!-- Theme CSS -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139429182-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139429182-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-  gtag('config', 'UA-139429182-2');
-</script>
+		gtag('config', 'UA-139429182-2');
+	</script>
 </head>
 <style>
 
-.floating-label-form-group {
-    position: relative;
-    border-bottom: none;
-}
+	.floating-label-form-group {
+		position: relative;
+		border-bottom: none;
+	}
 
-.masthead .masthead-subheading {
-    color:black;
-	font-size: 3.0rem;
-	text-align: justify;
-	word-break: break-all;
-}
+	.masthead .masthead-subheading {
+		color:black;
+		font-size: 3.0rem;
+		text-align: justify;
+		word-break: break-all;
+	}
 
-.bg-primary {
-    background-color: #2f91a6 !important;
-}
+	.bg-primary {
+		background-color: #2f91a6 !important;
+	}
+	.fa-stack {
+		position: relative;
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+		line-height: 2em;
+		vertical-align: middle;
+	}
 
-.navbar {
-    border-radius: 4px;
-}
+	.text-primary {
+		color: #2f91a6 !important;
+	}
 
-.fa-stack {
-    position: relative;
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: middle;
-}
+	
+	.content {
+	  padding: 16px;
+	}
 
-.text-primary {
-    color: #2f91a6 !important;
-}
+	.rounded {
+		border-radius: 4.5rem !important;
+	}
 
-.header {
-  background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%);
-}
+	.img {
+		width: 100%;
+		border-radius: 50%;
+	}
 
-.content {
-  padding: 16px;
-}
+	a {
+		color: #75a59c;
+		text-decoration: none;
+		background-color: transparent;
+	}
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
+	.social_icons{
+		float:left;
+		margin-left: -5px;
+	}
 
-.sticky + .content {
-  padding-top: 102px;
-}
+	.portfolio-item{
+		color: black;
+		text-align: center;
+		box-shadow: 0 10px 30px 0 rgba(0,0,0,.08);
+		cursor: pointer;
+		border-color: #fff;
+		padding: 15px 20px;
+		border-radius: 10px;
+		transition: all 300ms linear 0s;
+		background: #fff;
+	}
 
-.navbar {
-  position: fixed;
-  top: 0;
-}
+	.frame{
+		margin:1%;
+	}
 
-.navbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* flex-wrap: wrap; */
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    /* align-items: center; */
-    /* -webkit-box-pack: justify; */
-    -ms-flex-pack: justify;
-    justify-content: flex-end;
-    padding: .5rem 2rem;
-	width:100%;
-}
+	.primary_btn {
+		display: inline-block;
+		background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+		color: #119078;
+		font-family: "Roboto",sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 45px;
+		padding: 0 25px;
+		outline: none !important;
+		text-align: center;
+		cursor: pointer;
+		text-transform: uppercase;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
 
-.navbar a {
-    color: white;
-    text-align: center;
-    padding: 5px 35px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: -10px;
-    font-size: 2rem;
-}
+	.tools_expert {
+		padding: 10px;
+	}
 
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
+	.tools_expert .skill_main .skill_item {
+		margin-bottom: 8px;
+	}
 
-.rounded {
-    border-radius: 4.5rem !important;
-}
+	.waves-effect {
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		overflow: hidden;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		vertical-align: middle;
+		z-index: 1;
+		-webkit-transition: .3s ease-out;
+		transition: .3s ease-out;
+	}
+	.ripple {
+	  background-position: center;
+	  transition: background 0.8s;
+	}
 
-.img {
-	width: 100%;
-	border-radius: 50%;
-}
+	.ripple:active {
+	  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+	  color: white;
+	}
 
-a {
-    color: #75a59c;
-    text-decoration: none;
-    background-color: transparent;
-    margin-right: 20px;
-}
+	.primary_btn:hover {
+		-webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+		box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+	}
 
-.social_icons{
-	font-size:35px;
-	float:left;
-	margin-left: -5px;
-}
-
-.portfolio-item{
-	color: black;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 10px 30px 0 rgba(0,0,0,.08);s
-    border-color: #fff;
-    padding: 15px 20px;
-    border-radius: 10px;
-    transition: all 300ms linear 0s;
-    background: #fff;
-}
-
-.frame{
-	margin:1%;
-}
-
-.primary_btn {
-    display: inline-block;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    color: #119078;
-    font-family: "Roboto",sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 45px;
-    padding: 0 25px;
-    outline: none !important;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.tools_expert {
-    padding: 10px;
-}
-
-.tools_expert .skill_main .skill_item {
-    margin-bottom: 8px;
-}
-
-.topnav {
-    overflow: hidden;
-	text-align: center;
-}
-
-.topnav a {
-    display: inline-block;
-    color: #1170c1;
-    text-decoration: none;
-    font-size: 20px;
-	font-weight:600;
-	padding: 15px 15px;
-}
-
-.topnav a:hover {
-  color: black;
-}
-
-.topnav a.active {
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 800px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  .topnav {
-    overflow: hidden;
-	text-align: left;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .topnav.responsive a .float {
-    float: none;
-    display: block;
-    text-align: right;
-  }
-}
-
-a:hover {
-    color: #117964;
-    text-decoration: none !important;
-}
-
-a:focus {
-    outline: 5px !important;
-    outline-offset: -2px;
-}
-
-.waves-effect {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    vertical-align: middle;
-    z-index: 1;
-    -webkit-transition: .3s ease-out;
-    transition: .3s ease-out;
-}
-.ripple {
-  background-position: center;
-  transition: background 0.8s;
-}
-
-.ripple:active {
-  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-  color: white;
-}
-
-.primary_btn:hover {
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
-    box-shadow: 0 3px 3px 0 
-rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
-    rgba(0,0,0,0.2);
-}
-
-.fa {
-	font-size: 20px;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 50%;
-}
-
-.paragraph-bigger {
-	color:#191a1f;
-	font-size: 16px;
-	line-height: 1.8em;
-	font-weight: 300;
-	text-transform: none;
-}
+	.fa {
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+	}
 </style>
 
 <body id="page-top">
@@ -321,23 +182,23 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 		<div class="row align-items-center justify-content-between">
 			<div class="col-lg-7 col-sm-7">
 				<div class="masthead text-white text-center ">
-					<h2 class="masthead-subheading mb-0">Hello, I'm Gaurank M. Patil</h2><br>
+					<h2 class="masthead-subheading mb-0">Hello, I'm Gaurank Manoj Patil</h2><br>
 					<div class="paragraph-bigger" style="text-align: justify;">An Indian born UX/UI Designer and Developer.
 					Involved in designing and usability, passionate about designing digital experiences that leave a positive impact on people, 
 					environment and the society. My portfolio includes user interface design, brand & identity design, illustration, and art & creative direction.
 					I've worked on web and product solutions for a range of startups, in a variety of industries.</div>
-					<div class="social_icons">
-						<a href="https://api.whatsapp.com/send?phone=+919870355502"><img src="img/portfolio/iconfinder_whatsapp_2141620.png" alt="" style="height: 50px; padding: 5px;"></a>
-						<a href="https://www.linkedin.com/in/gaurank-patil-511600143"><img src="img/portfolio/iconfinder_linkedin_2141633.png" alt="" style="height: 50px; padding: 5px;"></a>
-						<a href="skype:pgaurank?chat"><img src="img/portfolio/iconfinder_skype_2141628.png" alt="" style="height: 50px; padding: 5px;"></a>
-						<a href="mailto:pgaurank@gmail.com"><img src="img/portfolio/iconfinder_mail_2141632.png" alt="" style="height: 50px; padding: 5px;"></a>
-						<a href="https://dribbble.com/pgaurank"><img src="img/portfolio/iconfinder_dribbble_2141638.png" alt="" style="height: 50px; padding: 5px;"></a>
+					<div class="social_icons pt-4">
+						<a href="https://api.whatsapp.com/send?phone=+919870355502"><img src="img/portfolio/iconfinder_whatsapp_2141620.png" alt="" style="height: 40px; padding: 5px;"></a>
+						<a href="https://www.linkedin.com/in/gaurank-patil-511600143"><img src="img/portfolio/iconfinder_linkedin_2141633.png" alt="" style="height: 40px; padding: 5px;"></a>
+						<a href="skype:pgaurank?chat"><img src="img/portfolio/iconfinder_skype_2141628.png" alt="" style="height: 40px; padding: 5px;"></a>
+						<a href="mailto:pgaurank@gmail.com"><img src="img/portfolio/iconfinder_mail_2141632.png" alt="" style="height: 40px; padding: 5px;"></a>
+						<a href="https://dribbble.com/pgaurank"><img src="img/portfolio/iconfinder_dribbble_2141638.png" alt="" style="height: 40px; padding: 5px;"></a>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4 col-sm-4">
 				<div class="masthead text-center ">
-					<img class="img rounded" style="width:50%;" src="img/portfolio/pic.jpg">
+					<img class="img rounded" style="width:70%;" src="img/portfolio/pic.jpg">
 				</div>
 			</div>
 		</div>
@@ -364,12 +225,11 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="portfolio-item">
 						<a href="yoyoApp.html">
-							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/yoyoLogo.jpg" alt="" style="width: 60%;height: 160px;">
+								<img src="img/portfolio/yoyoLogo.jpg" alt="" style="width: 45%; height: 108px;">
 							</div>
 							<h3 style="color: #42509d;font-size: 2rem;text-transform: none; margin-top:10px;">Yo-Yo App</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Figma Project </p>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Figma Project </p>
 						</a>
 					</div>
 				</div>
@@ -378,10 +238,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="erfx.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/illu2.jpg" alt="" style="width: 70%;height: 160px;">
+								<img src="img/portfolio/illu2.jpg" alt="" style="width: 75%; height: 120px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">ERFX</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Client Project </p>
+							<h3 style="color: #42509d; text-transform: none;">ERFX</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
 						</a>
 					</div>
 				</div>
@@ -390,10 +250,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="mobile.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/Mobile5.jpg" alt="" style="width: 70%;height: 160px;">
+								<img src="img/portfolio/Mobile5.jpg" alt="" style="width: 50%; height: 120px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">EMS Mobile App</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Client Project </p>
+							<h3 style="color: #42509d;text-transform: none;">EMS Mobile App</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
 						</a>
 					</div>
 				</div>
@@ -402,10 +262,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="ems.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/ems.png" alt="" style="height: 160px;">
+								<img src="img/portfolio/ems.png" alt="" style="height: 120px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">EMS</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Client Project </p>
+							<h3 style="color: #42509d;text-transform: none;">EMS</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
 						</a>
 					</div>
 				</div>
@@ -414,10 +274,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="query.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/wip.png" alt="" style="height: 160px;">
+								<img src="img/portfolio/wip.png" alt="" style="height: 120px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">Chat Box</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Client Project </p>
+							<h3 style="color: #42509d;text-transform: none;">Chat Box</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
 						</a>
 					</div>
 				</div>
@@ -426,10 +286,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="pivot.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/pivot1.png" alt="" style="height: 160px; padding:5px;">
+								<img src="img/portfolio/pivot1.png" alt="" style="height: 120px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">Pivot Table</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Client Project </p>
+							<h3 style="color: #42509d;text-transform: none;">Pivot Table</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
 						</a>
 					</div>
 				</div>
@@ -438,10 +298,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="greenbay.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/greenbaylogo.png" alt="" style="width: 100%;height: 160px;padding: 30px;">
+								<img src="img/portfolio/greenbaylogo.png" alt="" style="width: 100%;height: 120px;padding: 30px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">Greenbay Essentials</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Freelance Project </p>
+							<h3 style="color: #42509d;text-transform: none;">Greenbay Essentials</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Freelance Project </p>
 						</a>
 					</div>
 				</div>
@@ -450,10 +310,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="ockam.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/RenderSwarmlogo.png" alt="" style="width: 100%;height: 160px;padding: 20px;">
+								<img src="img/portfolio/RenderSwarmlogo.png" alt="" style="height: 120px;padding: 20px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">Ockam Render Farm</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> In-House Project </p>
+							<h3 style="color: #42509d;text-transform: none;">Ockam Render Farm</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> In-House Project </p>
 						</a>
 					</div>
 				</div>
@@ -462,10 +322,10 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="info.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/info.jpg" alt="" style="height: 160px;">
+								<img src="img/portfolio/info.jpg" alt="" style="height: 120px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">Infographics</h3>
-							<p style="color: #848484;font-size: 1.3rem;text-transform: none;margin-bottom:-15px;"> Client Project </p>
+							<h3 style="color: #42509d;text-transform: none;">Infographics</h3>
+							<p style="color: #848484;font-size: 1.3rem;text-transform: none;"> Client Project </p>
 						</a>
 					</div>
 				</div>
@@ -474,9 +334,9 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 						<a href="mockup.html">
 							<div class="portfolio-item-caption d-flex align-items-center justify-content-center "></div>
 							<div class="feature_item">
-								<img src="img/portfolio/mockup.png" alt="" style="height: 165px;">
+								<img src="img/portfolio/mockup.png" alt="" style="height: 150px;">
 							</div>
-							<h3 style="color: #42509d;font-size: 2rem;text-transform: none;margin-top:10px;">Other Designs</h3>
+							<h3 style="color: #42509d;text-transform: none;">Other Designs</h3>
 						</a>
 					</div>
 				</div>
@@ -484,7 +344,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 		</div>
 	</section>
 		
-	<section class="page-section" id="contact">
+	<section class="page-section portfolio mb-0" id="contact">
 		<div class="container">
 			<!-- Contact Section Heading -->
 			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills & Technologies</h2>
@@ -561,91 +421,71 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 			<div class="row">
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>UX/UI Design</h2>
+							<h3>UX/UI Design</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>Wire framing</h2>
+							<h3>Wire framing</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>SEO Optimizing</h2>
+							<h3>SEO Optimizing</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center " >
-						</div>
 						<div class="feature_item">
-							<h2>Web Design</h2>
+							<h3>Web Design</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>Responsive Designing</h2>
+							<h3>Responsive Designing</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center " >
-						</div>
 						<div class="feature_item">
-							<h2>Infographics Designing</h2>
+							<h3>Infographics Designing</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center " >
-						</div>
 						<div class="feature_item">
-							<h2>Logo Designing</h2>
+							<h3>Logo Designing</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>Mobile App Design</h2>
+							<h3>Mobile App Design</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>Interaction Design</h2>
+							<h3>Interaction Design</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
-						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
-						</div>
 						<div class="feature_item">
-							<h2>Web Development</h2>
+							<h3>Web Development</h3>
 						</div>
 					</div>
 				</div>
@@ -654,7 +494,7 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 	</section>
 		
 	<!-- Contact Section -->
-	<section class="page-section" id="about">
+	<section class="page-section portfolio mb-0" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 ml-auto">
@@ -747,19 +587,19 @@ rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px
 			<!-- Contact Section Form -->
 		</div>
 	</section>
-	<section class="copyright py-4 text-center text-white" style="font-size: 20px;">
-		<div class="container-fluid">
+	
+	<section class="copyright py-4 text-center text-white" style="font-size: 20px;text-align:center;">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-12" style="text-align:center;">
+				<div class="col-md-12">
 					<h2>Let's Connect</h2>
-					<h4>Feel free to reach out for any oppurtunities or just a friendly hello!</h4>
-					<a href="mailto:pgaurank@gmail.com"><h4>pgaurank@gmail.com</h4></a><br>
-					<h4>Copyright © 2020 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h4>
+					<h5>Feel free to reach out for any oppurtunities or just a friendly hello!</h5>
+					<a href="mailto:pgaurank@gmail.com"><h5 class="pb-4">pgaurank@gmail.com</h5></a>
+					<h5>Copyright © 2020 All rights reserved | Gaurank M. Patil UX/UI Designer & Developer</h5>
 				</div>
 			</div>
 		</div>
 	</section>
-
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js"></script>

@@ -9828,7 +9828,28 @@ a.text-dark:hover {
 	position: relative;
 	display: block;
 	margin-bottom: 25px;
-	overflow: hidden
+}
+.portfolio-item{
+	color: black;
+	text-align: center;
+	box-shadow: 0 10px 30px 0 rgba(0,0,0,.08);
+	cursor: pointer;
+	border-color: #fff;
+	padding: 15px 20px;
+	border-radius: 10px;
+	transition: all 300ms linear 0s;
+	background: #fff;
+}
+#indexPortfolio .portfolio-item {
+	cursor: pointer;
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+    color: black;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 8%);
+    border-color: #fff;
+    border-radius: 10px;
+	padding: 0px;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
 	position: absolute;
@@ -10000,3 +10021,60 @@ a:focus {
 .header {
   background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%);
 }
+.primary_btn {
+		display: inline-block;
+		background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+		color: #119078;
+		font-family: "Roboto",sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 45px;
+		padding: 0 25px;
+		outline: none !important;
+		text-align: center;
+		cursor: pointer;
+		text-transform: uppercase;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+
+	.tools_expert {
+		padding: 10px;
+	}
+
+	.tools_expert .skill_main .skill_item {
+		margin-bottom: 8px;
+	}
+
+	.waves-effect {
+		position: relative;
+		cursor: pointer;
+		display: inline-block;
+		overflow: hidden;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		vertical-align: middle;
+		z-index: 1;
+		-webkit-transition: .3s ease-out;
+		transition: .3s ease-out;
+	}
+	.ripple {
+	  background-position: center;
+	  transition: background 0.8s;
+	}
+
+	.ripple:active {
+	  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+	  color: white;
+	}
+
+	.primary_btn:hover {
+		-webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+		box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+	}
+	.div-block-24 {
+		line-height: 2.0em;
+	}

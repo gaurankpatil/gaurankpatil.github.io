@@ -38,15 +38,8 @@
 		border-bottom: none;
 	}
 
-	.masthead .masthead-subheading {
-		color:black;
-		font-size: 3.0rem;
-		text-align: justify;
-		word-break: break-all;
-	}
-
 	.bg-primary {
-		background-color: #2f91a6 !important;
+		background-color: #ffffff !important
 	}
 	.fa-stack {
 		position: relative;
@@ -95,12 +88,14 @@
 		text-decoration: none;
 		border-radius: 50%;
 	}
-	
+	.width95 {
+		width:95%;
+	}
 </style>
 
 <body id="page-top">
 	<div id="menubar-title" class="header">
-		<div class="topnav" id="myTopnav">
+		<div class="topnav text-center" id="myTopnav">
 			<a href="">Home</a>
 			<a href="#work">Portfolio</a>
 			<a href="#contact">Prelude</a>
@@ -111,7 +106,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid width95">
 		<div class="row align-items-center justify-content-between">
 			<div class="col-lg-7 col-sm-7">
 				<div class="masthead text-white text-center ">
@@ -138,7 +133,7 @@
 	</div>
 	
 	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" id="work" style="background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%)!important; opacity: 90%;">
+	<section class="page-section portfolio bg-primary text-white mb-0" id="work">
 		<div class="container">
 
 			<!-- Portfolio Section Heading -->
@@ -155,6 +150,17 @@
 		
 			<!-- Portfolio Grid Items -->
 			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 mb-4">
+					<a href="TMS.html" id="indexPortfolio">
+						<img class="portfolio-item" src="img/portfolio/YOYO_Mobile Mockups.png" alt="" style="width: 100%;" />
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
+							<h3 style="color: #42509d;">TMS</h3>
+						</div>
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center ">
+							<p style="color: #848484;font-size: 1.3rem;"> Client Project </p>
+						</div>
+					</a>
+				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 mb-4">
 					<a href="yoyoApp.html" id="indexPortfolio">
 						<img class="portfolio-item" src="img/portfolio/YOYO_Mobile Mockups.png" alt="" style="width: 100%;" />
@@ -336,14 +342,12 @@
 		</div>
 	</section>
 			
-	<!-- Portfolio Section -->
-	<section class="page-section portfolio bg-primary text-white mb-0" style="background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%)!important; opacity: 90%;">
+	<!-- Portfolio Section 
+	<section class="page-section portfolio bg-primary text-white mb-0">
 		<div class="container">
 
-			<!-- Portfolio Section Heading -->
 			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Services Offered </h2>
 
-			<!-- Icon Divider -->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
 					<div class="divider-custom-icon">
@@ -352,7 +356,6 @@
 				<div class="divider-custom-line"></div>
 			</div>
 		
-			<!-- Portfolio Grid Items -->
 			<div class="row">
 				<div class="col-md-3 col-lg-3">
 					<div class="portfolio-item mx-auto">
@@ -426,7 +429,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
 		
 	<!-- Contact Section -->
 	<section class="page-section portfolio mb-0" id="about">
@@ -523,7 +526,7 @@
 		</div>
 	</section>
 	
-	<section class="copyright py-4 text-center text-white" style="font-size: 20px;text-align:center;">
+	<section class="py-4 text-center" style="font-size: 20px; background-color: #1a252f; background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%);">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">

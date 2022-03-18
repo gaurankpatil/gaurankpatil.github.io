@@ -192,7 +192,7 @@ figure {
 }
 img {
 	vertical-align: middle;
-	border-style: none
+	border-style: none;
 }
 svg {
 	overflow: hidden;
@@ -9940,7 +9940,15 @@ form .row:first-child .floating-label-form-group {
 .copyright {
 	background-color: #1a252f
 }
-
+.fa {
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+	}
+	.width95 {
+		width:95%;
+	}
 #work .portfolio-item {
 	top: 0px;
 	transition: top ease 0.5s;
@@ -9950,7 +9958,7 @@ form .row:first-child .floating-label-form-group {
 	top: -20px;
 }
 .font-6 {
-	font-size: 6rem !important;
+	font-size: 4.5rem !important;
 }
 .topnav a {
     color: #000000;
@@ -10020,7 +10028,7 @@ a:focus {
 }
 .paragraph-bigger {
     color: #191a1f;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.8em;
     font-weight: 300;
     text-transform: none;

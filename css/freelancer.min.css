@@ -9594,3 +9594,7 @@ a:focus {
 	.div-block-24 {
 		line-height: 2.0em;
 	}
+	.image_radius {
+		border-radius: 40px;
+		width: 80%;
+	}

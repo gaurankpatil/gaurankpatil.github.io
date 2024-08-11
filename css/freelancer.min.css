@@ -9422,7 +9422,7 @@ form .row:first-child .floating-label-form-group {
 	display: inline-block;
 }
 .masthead .masthead-subheading {
-	color:black;
+	color:#333;
 	font-size: 3.0rem;
 	text-align: justify;
 	word-break: break-all;
@@ -9487,9 +9487,8 @@ a:focus {
 	outline-offset: -2px;
 }
 .paragraph-bigger {
-    color: #818185;
-    font-size: 17px;
-    line-height: 1.8em;
+    color: #333;
+    font-size: 17px; 
     font-weight: 300;
     text-transform: none;
 }
@@ -9524,6 +9523,7 @@ a:focus {
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: repeat;
+	border-radius: 40px;
 }
 .nav-block {
 	position: absolute;
@@ -9599,5 +9599,87 @@ ul.b {
 	}
 	.image_radius {
 		border-radius: 40px;
-		width: 80%;
+		width: 75%;
 	}
+	
+	.card {
+    margin-bottom: 10px;
+}
+
+.grid figure {
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+	
+}
+
+figure.effect-lily img {
+	width: 100%;
+}
+
+
+figure.effect-lily h1,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,-140px,0);
+	transform: translate3d(0,-140px,0);
+	opacity: 0;
+}
+
+figure.effect-lily h1 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	font-size: 2.3rem;
+    font-weight: 700;
+	color: black;
+	text-align: center;
+	
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 0.1;
+}
+
+figure.effect-lily:hover h1,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,-155px,0);
+	transform: translate3d(0,-240px,0);
+    opacity: 1;
+    margin: auto;
+}
+
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+	

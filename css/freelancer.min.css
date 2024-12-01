@@ -506,7 +506,7 @@ pre code {
 }
 @media (min-width: 1200px) {
 	.container {
-		max-width: 1350px;
+		max-width: 1300px;
 	}
 }
 .container-fluid {
@@ -9488,9 +9488,10 @@ a:focus {
 }
 .paragraph-bigger {
     color: #333;
-    font-size: 17px; 
+    font-size: 20px;
     font-weight: 300;
     text-transform: none;
+    word-spacing: 3px;
 }
 /* .header { */
   /* background-image: linear-gradient(120deg, #2bc0e4 -30%, #eaecc6 100%); */

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Ageing distribution placeholder</title>
+  <desc id="desc">Category summary cards showing 0 to 7, 8 to 14, and 15 plus day ageing bands.</desc>
+  <rect width="1200" height="900" fill="#f2f7fd"/>
+  <text x="80" y="100" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0d2340">Pending report ageing</text>
+  <text x="80" y="145" font-family="Arial, sans-serif" font-size="19" fill="#5d7086">Total volume and urgency visible at the category level</text>
+  <g transform="translate(80 210)">
+    <rect width="500" height="360" rx="24" fill="#fff" stroke="#d7e2ef" stroke-width="2"/>
+    <text x="38" y="60" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#172a45">Business expenses</text>
+    <text x="38" y="125" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#0d2340">128</text>
+    <text x="153" y="123" font-family="Arial, sans-serif" font-size="21" fill="#66788b">pending</text>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#d9e8f8" stroke-width="34"/>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#0067d2" stroke-width="34" stroke-dasharray="220 515" transform="rotate(-90 370 150)"/>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#f6a623" stroke-width="34" stroke-dasharray="110 515" stroke-dashoffset="-220" transform="rotate(-90 370 150)"/>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#d83f3f" stroke-width="34" stroke-dasharray="85 515" stroke-dashoffset="-330" transform="rotate(-90 370 150)"/>
+    <g font-family="Arial, sans-serif" font-size="18">
+      <circle cx="46" cy="226" r="8" fill="#0067d2"/><text x="70" y="232" fill="#465a70">0–7 days</text><text x="415" y="232" text-anchor="end" font-weight="700" fill="#172a45">76</text>
+      <circle cx="46" cy="274" r="8" fill="#f6a623"/><text x="70" y="280" fill="#465a70">8–14 days</text><text x="415" y="280" text-anchor="end" font-weight="700" fill="#172a45">32</text>
+      <circle cx="46" cy="322" r="8" fill="#d83f3f"/><text x="70" y="328" fill="#465a70">15+ days</text><text x="415" y="328" text-anchor="end" font-weight="700" fill="#172a45">20</text>
+    </g>
+  </g>
+  <g transform="translate(620 210)">
+    <rect width="500" height="360" rx="24" fill="#fff" stroke="#d7e2ef" stroke-width="2"/>
+    <text x="38" y="60" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#172a45">Travel requests</text>
+    <text x="38" y="125" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#0d2340">32</text>
+    <text x="116" y="123" font-family="Arial, sans-serif" font-size="21" fill="#66788b">pending</text>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#d9e8f8" stroke-width="34"/>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#0067d2" stroke-width="34" stroke-dasharray="240 515" transform="rotate(-90 370 150)"/>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#f6a623" stroke-width="34" stroke-dasharray="70 515" stroke-dashoffset="-240" transform="rotate(-90 370 150)"/>
+    <circle cx="370" cy="150" r="82" fill="none" stroke="#d83f3f" stroke-width="34" stroke-dasharray="60 515" stroke-dashoffset="-310" transform="rotate(-90 370 150)"/>
+    <g font-family="Arial, sans-serif" font-size="18">
+      <circle cx="46" cy="226" r="8" fill="#0067d2"/><text x="70" y="232" fill="#465a70">0–7 days</text><text x="415" y="232" text-anchor="end" font-weight="700" fill="#172a45">19</text>
+      <circle cx="46" cy="274" r="8" fill="#f6a623"/><text x="70" y="280" fill="#465a70">8–14 days</text><text x="415" y="280" text-anchor="end" font-weight="700" fill="#172a45">8</text>
+      <circle cx="46" cy="322" r="8" fill="#d83f3f"/><text x="70" y="328" fill="#465a70">15+ days</text><text x="415" y="328" text-anchor="end" font-weight="700" fill="#172a45">5</text>
+    </g>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <rect x="210" y="650" width="780" height="116" rx="22" fill="#ffffff" stroke="#b9d7f8" stroke-width="2"/>
+    <circle cx="272" cy="708" r="27" fill="#0067d2"/>
+    <text x="272" y="718" text-anchor="middle" font-size="27" font-weight="700" fill="#ffffff">!</text>
+    <text x="323" y="697" font-size="21" font-weight="700" fill="#0d2340">Priority signal</text>
+    <text x="323" y="731" font-size="18" fill="#5e7186">Reports pending 15+ days become visible before the approver opens a record.</text>
+  </g>
+</svg>

@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Senior Product Designer case study about redesigning an enterprise Travel &amp; Expense approval dashboard around ageing, policy risk, and page-level bulk approval.">
+  <meta name="theme-color" content="#0067d2">
+
+  <title>Travel & Expense Approval Dashboard Case Study | Gaurank Patil</title>
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="assets/css/case-study.css">
+
+  <script src="assets/js/case-study.js" defer></script>
+</head>
+<body
+  data-case-study-status="frozen"
+  data-case-study-version="1.0"
+>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Gaurank Patil home">
+        <span class="brand__mark" aria-hidden="true">GP</span>
+        <span class="brand__text">
+          <strong>Gaurank Patil</strong>
+          <span>Senior Product Designer</span>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-menu-toggle
+      >
+        <span class="menu-toggle__label">Menu</span>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation" data-primary-nav>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero" id="overview" aria-labelledby="case-title">
+      <div class="container case-hero__grid">
+        <div class="case-hero__content reveal">
+          <p class="eyebrow">Enterprise SaaS · Finance operations</p>
+          <h1 id="case-title">Reframing expense approvals around risk, urgency, and action</h1>
+          <p class="case-hero__summary">
+            A focused redesign of an enterprise Travel &amp; Expense approval dashboard, helping managers triage pending reports, understand policy exceptions, and process routine approvals with fewer unnecessary steps.
+          </p>
+
+          <ul class="case-hero__facts" aria-label="Project summary">
+            <li>
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              <span>Enterprise Travel &amp; Expense Management Platform (Web)</span>
+            </li> 
+            <li>
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+              <span>Product Designer &amp; Front-end Contributor</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              <span>Approximately 2 weeks, reviews, iteration, and front-end contribution</span>
+            </li>
+			<li>
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <span>Figma, HTML5, Bootstrap, CSS, and JavaScript</span>
+            </li>
+			<li>
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <span>PM, engineers, finance stakeholders, and client-side approvers</span>
+            </li>
+			<li>
+              <i class="fa-solid fa-people-arrows-left-right"" aria-hidden="true"></i>
+              <span>Owned the dashboard experience and front-end contribution. </span>
+            </li>
+          </ul> 
+        </div>
+
+        <figure class="case-hero__visual reveal m-0">
+          <div class="screen-frame">
+            <img
+			  src="assets/images/placeholders/ApprovalDesk.png"
+              width="1600"
+              height="900"
+              alt="Placeholder showing a redesigned enterprise expense approval dashboard"
+            >
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="case-nav" aria-label="Case study sections" data-case-nav>
+      <div class="container case-nav__inner">
+        <a class="is-active" href="#problem">Problem</a>
+        <a href="#insights">Insights</a>
+		<a href="#successcriteria">Success</a>
+        <a href="#decisions">Decisions</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#reflection">Reflection</a>
+      </div>
+    </nav> 
+
+    <section class="section section--alt" id="problem" data-section aria-labelledby="problem-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">02</span>
+          <div>
+            <p class="eyebrow">Context and problem</p>
+            <h2 id="problem-title">Approvers did not need more data, but better prioritisation.</h2>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--wide-media">
+          <div class="prose reveal">
+            <p class="lead">
+              The approval dashboard contained the information managers needed, but it did not make the next decision obvious.
+            </p>
+            <p>
+              The broader product was seeing lower-than-expected customer traction, and recurring feedback highlighted the approval experience as one area worth improving. Routine reports, ageing submissions, and policy exceptions could appear similar during scanning, so approvers spent too much time opening individual records before understanding which work required attention first.
+            </p>
+            <p>
+              The redesign also had to work within an existing backend, established approval logic, and policy rules that varied by client. The objective was to improve the decision experience without rebuilding the core system.
+            </p> 
+            <div class="challenge-card">
+              <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              <div>
+                <h3>Design challenge / Client feedback</h3>
+                <p>How might we help approvers identify what requires attention, understand why it requires attention, and take the appropriate action without opening every report?
+				Approvers described spending too much time identifying which reports required attention first.</p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="media-card reveal">
+            <img
+              src="assets/images/placeholders/TNE Dashboard_old.png"
+              width="1400"
+              height="900"
+              loading="lazy"
+              alt="Existing expense dashboard with callouts showing prioritisation, policy visibility, and repeated-action issues"
+            >  
+		   <figcaption>
+          <strong>Previous approval experience.</strong>
+          Pending work was visible, but urgency, policy risk, and the next
+          appropriate action were difficult to compare during triage.
+        </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="insights" data-section aria-labelledby="insights-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">03</span>
+          <div>
+            <p class="eyebrow">Discovery and insight</p>
+            <h2 id="insights-title">Lightweight research, focused on how people made approval decisions</h2>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--balanced">
+          <div class="prose reveal">
+            <p> Communicated with a small set of
+			  client-side expense approvers in managerial and finance-oriented roles
+			  and reviewed how they identified pending work, interpreted exceptions,
+			  and decided what required attention first.
+			</p>
+			<p>
+			   Combined those conversations with workflow walkthroughs, recurring
+			  client feedback, support issues, and an assessment of the existing
+			  interface. The findings were used to identify repeated workflow
+			  patterns; they were not treated as statistically representative
+			  research or formal usability validation of the final design.</p>
+          </div>
+
+          <aside class="insight-callout reveal" aria-label="Central research insight">  
+            <h3>Approvers were spending too much effort scanning before they could act.</h3>
+          </aside>
+        </div>
+
+        <div class="evidence-grid reveal" aria-label="Evidence to design decisions">
+            
+		  <article class="evidence-card">
+            <span class="evidence-card__icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
+            <p class="eyebrow">Evidence</p>
+            <h3>Too much scanning</h3>
+            <p>Approvers struggled to identify which items needed attention first.</p>
+            <div class="evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Design response</p>
+            <p class="evidence-card__response">Move category, age, amount, policy state, and action earlier in the hierarchy.</p>
+          </article>
+
+          <article class="evidence-card">
+            <span class="evidence-card__icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></span>
+            <p class="eyebrow">Evidence</p>
+            <h3>Counts did not show urgency</h3>
+            <p>Pending volume alone did not reveal how long work had been waiting.</p>
+            <div class="evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Design response</p>
+            <p class="evidence-card__response">Show ageing bands for 0–7, 8–14, and 15+ days.</p>
+          </article>
+
+          <article class="evidence-card">
+            <span class="evidence-card__icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
+            <p class="eyebrow">Evidence</p>
+            <h3>Different types of risk</h3>
+            <p>Ageing and policy exceptions represented different reasons to act.</p>
+            <div class="evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Design response</p>
+            <p class="evidence-card__response">Separate policy state from ordinary ageing status.</p>
+          </article>
+
+          <article class="evidence-card">
+            <span class="evidence-card__icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
+            <p class="eyebrow">Evidence</p>
+            <h3>Repetitive routine work</h3>
+            <p>Eligible reports were processed one at a time even when risk was low.</p>
+            <div class="evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Design response</p>
+            <p class="evidence-card__response">Introduce page-level bulk approval with explicit safeguards.</p>
+          </article>
+        </div> 
+    </section>
+
+	<section class="section" id="successcriteria" data-section aria-labelledby="successcriteria"> >
+	<div class="container">	
+		<div class="section-heading reveal">
+          <span class="section-heading__number">04</span>
+          <div>
+            <p class="eyebrow">Intended success criteria</p>
+            <h2 id="insights-title">These criteria guided the solution and describe what would measure in an integrated release. They are not presented as achieved outcomes.</h2>
+          </div>
+        </div>
+		<div
+		  class="outcome-grid outcome-grid--compact reveal"
+		  aria-label="Intended success criteria"
+		> 
+		  <article class="outcome-card">
+			<span class="outcome-card__icon">
+			  <i class="fa-solid fa-ranking-star" aria-hidden="true"></i>
+			</span>
+
+			<h3>Prioritisation</h3>
+
+			<ul>
+			  <li>Reduce time to identify the highest-priority voucher</li>
+			  <li>
+				Improve comprehension of the 0–7, 8–14, and 15+ day ageing bands
+			  </li>
+			</ul>
+		  </article>
+
+		  <article class="outcome-card">
+			<span class="outcome-card__icon">
+			  <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+			</span>
+
+			<h3>Risk comprehension</h3>
+
+			<ul>
+			  <li>Distinguish policy violations from ordinary ageing</li>
+			  <li>
+				Understand why exception-heavy vouchers require individual review
+			  </li>
+			</ul>
+		  </article>
+
+		  <article class="outcome-card">
+			<span class="outcome-card__icon">
+			  <i class="fa-solid fa-list-check" aria-hidden="true"></i>
+			</span>
+
+			<h3>Workflow efficiency</h3>
+
+			<ul>
+			  <li>
+				Understand that Select all applies to eligible vouchers on the
+				current page
+			  </li>
+			  <li>
+				Reduce unnecessary visits to individual detail pages for routine
+				work
+			  </li>
+			</ul>
+		  </article>
+  
+		<article class="outcome-card">
+            <span class="outcome-card__icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+            <h3>Success measures</h3>
+            <ul>
+              <li>Time to identify the highest-priority report</li>
+              <li>Approval cycle time</li>
+              <li>Policy-state interpretation accuracy</li>
+              <li>Bulk-selection errors and confidence</li>
+            </ul>
+          </article>
+</div>
+</div> 
+    </section>
+
+	
+    <section class="section section--alt" id="decisions" data-section aria-labelledby="decisions-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">04</span>
+          <div>
+            <p class="eyebrow">Design decisions</p>
+            <h2 id="decisions-title">Three decisions shaped the new approval experience</h2>
+          </div>
+        </div>
+
+        <div class="decision-stack">
+          <article class="decision-card reveal">
+            <div class="decision-card__content">
+              <span class="decision-card__number">01</span>
+              <p class="eyebrow">Prioritisation</p>
+              <h3>Make ageing visible before detailed review</h3>
+              <p>
+                A pending count tells an approver how much work exists, but not which work is becoming urgent. I introduced ageing distribution within each report category so approvers could distinguish recent submissions from reports waiting longer.
+              </p>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> 0–7 days for recent reports</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> 8–14 days for items needing attention</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> 15+ days as the highest-priority ageing group</li>
+              </ul>
+              <div class="reflection-note">
+                <strong>What I would improve today</strong>
+                <p>Make every band label and count explicit, and reassess whether a compact stacked bar would support comparison better than repeated donut charts.</p>
+              </div>
+            </div>
+            <figure class="decision-card__visual">
+              <img
+                src="assets/images/placeholders/ageing-breakdown.png"
+                width="1200"
+                height="900"
+                loading="lazy"
+                alt="Placeholder for dashboard category cards showing report ageing bands"
+              >
+              <figcaption>Replace with a tight crop of the category-level ageing visualisation.</figcaption>
+            </figure>
+          </article>
+
+          <article class="decision-card decision-card--reverse reveal">
+            <div class="decision-card__content">
+              <span class="decision-card__number">02</span>
+              <p class="eyebrow">Risk semantics</p>
+              <h3>Separate policy risk from ordinary ageing</h3>
+              <p>
+                A report could require attention because it was old, because it violated policy, or because both were true. I surfaced policy state directly in the report summary instead of collapsing every concern into one generic warning.
+              </p>
+              <p>
+                This gave the approver context at the point of decision and made it clear why a report required individual review.
+              </p>
+              <div class="guardrail-card">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                <p><strong>Critical safeguard:</strong> Reports containing policy violations were not eligible for bulk approval.</p>
+              </div>
+            </div>
+            <figure class="decision-card__visual">
+              <img
+                src="assets/images/placeholders/policy-risk.png"
+                width="1200"
+                height="900"
+                loading="lazy"
+                alt="Placeholder for an expense report summary showing separate ageing and policy-risk indicators"
+              >
+            </figure>
+          </article>
+
+          <article class="decision-card reveal">
+            <div class="decision-card__content">
+              <span class="decision-card__number">03</span>
+              <p class="eyebrow">Efficiency with safeguards</p>
+              <h3>Make routine approval faster, with explicit guardrails</h3>
+              <p>
+                Processing low-risk reports one by one created unnecessary repetition, but a universal “Approve all” action would make the scope and policy implications unsafe.
+              </p>
+              <p>
+                I introduced page-level selection for eligible reports. Policy-breach reports were excluded, and approval confirmation and rejection-reason capture provided accountability around consequential actions.
+              </p>
+              <ul class="check-list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Select all applies to the current page</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Ineligible reports remain visible but require individual review</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Confirmation clarifies the action before completion</li>
+              </ul>
+            </div>
+            <figure class="decision-card__visual">
+              <img
+                src="assets/images/placeholders/TNE4.png"
+                width="1200"
+                height="900"
+                loading="lazy"
+                alt="Placeholder for page-level bulk selection and approval with excluded policy-breach reports"
+              >
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="delivery" data-section aria-labelledby="delivery-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">05</span>
+          <div>
+            <p class="eyebrow">Design to code</p>
+            <h2 id="delivery-title">Carried the approved experience into the existing front-end environment</h2>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--balanced">
+          <div class="prose reveal">
+            <p>
+              After the design direction was reviewed, Translated the interface into the existing product environment using HTML5, Bootstrap, CSS, and JavaScript. 
+              My contribution covered the interface structure, responsive styling, and JavaScript interactions required to represent the approved dashboard direction.
+            </p> 
+          </div>
+
+          <ol class="delivery-flow reveal" aria-label="Design to delivery flow">
+            <li>
+              <span><i class="fa-brands fa-figma" aria-hidden="true"></i></span>
+              <strong>Figma</strong>
+              <small>Approved design direction</small>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+              <strong>HTML, CSS &amp; JS</strong>
+              <small>Functional front-end</small>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-code-merge" aria-hidden="true"></i></span>
+              <strong>Code merged</strong>
+              <small>Product codebase</small>
+            </li> 
+          </ol>
+        </div> 
+      </div>
+    </section>
+
+    <section class="section section--alt" id="reflection" data-section aria-labelledby="reflection-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">06</span>
+          <div>
+            <p class="eyebrow">Reflection</p>
+            <h2 id="reflection-title">What this work reinforced for me</h2>
+          </div>
+        </div>
+
+        <div class="learning-grid reveal">
+          <article class="learning-card">
+            <span><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></span>
+            <h3>Prioritisation is the product</h3>
+            <p>An approval dashboard should help users decide what to do next, not simply display more information.</p>
+          </article>
+          <article class="learning-card">
+            <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>
+            <h3>Risk needs distinct semantics</h3>
+            <p>Ageing and policy exceptions represent different reasons for attention and should not share one generic status.</p>
+          </article>
+          <article class="learning-card">
+            <span><i class="fa-solid fa-shield" aria-hidden="true"></i></span>
+            <h3>Efficiency needs guardrails</h3>
+            <p>Bulk actions are useful only when eligibility, scope, confirmation, and exception handling are explicit.</p>
+          </article>
+          <article class="learning-card">
+            <span><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
+            <h3>I would validate further</h3>
+            <p>Ageing comprehension, bulk-selection scope, exclusions, permissions, API failures, and accessible operation.</p>
+          </article>
+        </div>
+
+        <div class="validation-panel reveal">
+          <div>
+            <p class="eyebrow">Before a client rollout</p>
+            <h3>I would test the integrated experience with real approvers</h3>
+          </div>
+          <ul class="validation-list">
+            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Identify the report requiring immediate attention</li>
+            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Explain why a report is flagged</li>
+            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Bulk approve eligible reports without selecting exceptions</li>
+            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Recover from loading, permission, and partial-failure conditions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-navigation" aria-label="Project navigation">
+      <div class="container project-navigation__inner">
+        <a class="project-navigation__link" href="index.html#work">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>
+            <small>Back to</small>
+            <strong>All projects</strong>
+          </span>
+        </a>
+
+        <a class="project-navigation__link project-navigation__link--next" href="order-tracking.html">
+          <span>
+            <small>Next case study</small>
+            <strong>Order Tracking Experience</strong>
+          </span>
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <a class="brand brand--footer" href="index.html" aria-label="Gaurank Patil home">
+          <span class="brand__mark" aria-hidden="true">GP</span>
+          <span class="brand__text">
+            <strong>Gaurank Patil</strong>
+            <span>Senior Product Designer</span>
+          </span>
+        </a>
+        <p>Designing clear, scalable experiences for complex products.</p>
+      </div>
+
+      <div class="site-footer__contact" id="contact">
+        <p class="eyebrow">Get in touch</p>
+        <a href="mailto:pgaurank@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> pgaurank@gmail.com</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+      </div>
+
+      <p class="site-footer__copyright">© <span data-current-year></span> Gaurank Patil</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+</body>
+</html>

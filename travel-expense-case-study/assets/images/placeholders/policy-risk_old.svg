@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Policy risk placeholder</title>
+  <desc id="desc">Expense report summary showing ageing, policy state, available actions, and a bulk approval safeguard.</desc>
+  <rect width="1200" height="900" fill="#f2f7fd"/>
+  <text x="80" y="100" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0d2340">Risk in the report context</text>
+  <text x="80" y="145" font-family="Arial, sans-serif" font-size="19" fill="#5d7086">Ageing and policy exceptions remain separate, readable signals</text>
+  <g transform="translate(100 235)">
+    <rect width="1000" height="360" rx="26" fill="#ffffff" stroke="#d4e0ed" stroke-width="2"/>
+    <rect x="0" y="0" width="1000" height="66" rx="26" fill="#f8fafc"/>
+    <text x="32" y="42" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172a45">Expense report</text>
+    <rect x="814" y="17" width="154" height="34" rx="17" fill="#fff0f0"/>
+    <text x="891" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#c43d3d">Individual review</text>
+
+    <text x="42" y="128" font-family="Arial, sans-serif" font-size="18" fill="#68798c">Employee</text>
+    <text x="42" y="166" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#172a45">Priya Sharma</text>
+    <text x="42" y="222" font-family="Arial, sans-serif" font-size="18" fill="#68798c">Report</text>
+    <text x="42" y="260" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#172a45">Client meeting · Singapore</text>
+    <text x="42" y="316" font-family="Arial, sans-serif" font-size="18" fill="#68798c">Amount</text>
+    <text x="145" y="316" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#172a45">SGD 1,240</text>
+
+    <g transform="translate(512 98)">
+      <rect width="205" height="78" rx="16" fill="#fff7e8" stroke="#f3d9a6"/>
+      <text x="22" y="30" font-family="Arial, sans-serif" font-size="15" fill="#7b5a22">Ageing</text>
+      <text x="22" y="57" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#ae6500">15+ days pending</text>
+    </g>
+    <g transform="translate(742 98)">
+      <rect width="205" height="78" rx="16" fill="#fff0f0" stroke="#f1caca"/>
+      <text x="22" y="30" font-family="Arial, sans-serif" font-size="15" fill="#7c4b4b">Policy status</text>
+      <text x="22" y="57" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#c43d3d">Policy breach</text>
+    </g>
+
+    <rect x="512" y="226" width="205" height="54" rx="14" fill="#eef6ff" stroke="#bcdafb"/>
+    <text x="614" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0067d2">View details</text>
+    <rect x="742" y="226" width="205" height="54" rx="14" fill="#f4f6f9" stroke="#d9e1ea"/>
+    <text x="844" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#77889b">Bulk approval unavailable</text>
+  </g>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="215" y="660" width="770" height="118" rx="22" fill="#fff0f0" stroke="#edc4c4" stroke-width="2"/>
+    <circle cx="275" cy="719" r="28" fill="#c43d3d"/>
+    <path d="M263 719h24M275 707v24" stroke="#fff" stroke-width="5" stroke-linecap="round" transform="rotate(45 275 719)"/>
+    <text x="330" y="704" font-size="21" font-weight="700" fill="#0d2340">Compliance safeguard</text>
+    <text x="330" y="738" font-size="18" fill="#5e7186">A policy breach remains visible and requires individual review.</text>
+  </g>
+</svg>

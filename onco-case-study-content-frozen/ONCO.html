@@ -1,0 +1,591 @@
+<!doctype html>
+<!-- ONCO case study v1.0: narrative, claims, and structure content-frozen; final product imagery pending. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Senior Product Designer case study about designing a clinician-controlled oncology workflow across patient intake, case management, treatment planning, chemotherapy delivery, and follow-up.">
+  <meta name="theme-color" content="#0067d2">
+
+  <title>Oncology Clinical Workflow Case Study | Gaurank Patil</title>
+
+  <link rel="canonical" href="https://gaurankpatil.github.io/ONCO.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Oncology Clinical Workflow Case Study | Gaurank Patil">
+  <meta property="og:description" content="Designing a zero-to-one oncology platform that kept longitudinal patient context and clinician authority visible across treatment planning and chemotherapy follow-up.">
+  <meta property="og:url" content="https://gaurankpatil.github.io/ONCO.html">
+  <meta property="og:image" content="https://gaurankpatil.github.io/assets/images/oncology/treatment-plan.webp">
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="stylesheet" href="assets/css/case-study.css">
+
+  <script src="assets/js/case-study.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Designing a clinician-controlled oncology workflow from patient intake to chemotherapy follow-up",
+    "description": "A product design case study for a confidential oncology platform delivered through Techtrail Consultancy Services.",
+    "author": {
+      "@type": "Person",
+      "name": "Gaurank Patil",
+      "jobTitle": "Senior Product Designer"
+    },
+    "url": "https://gaurankpatil.github.io/ONCO.html"
+  }
+  </script>
+</head>
+<body
+  data-case-study-status="content-frozen"
+  data-case-study-version="1.0"
+  data-image-status="pending"
+>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Gaurank Patil home">
+        <span class="brand__mark" aria-hidden="true">GP</span>
+        <span class="brand__text">
+          <strong>Gaurank Patil</strong>
+          <span>Senior Product Designer</span>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-menu-toggle
+      >
+        <span class="menu-toggle__label">Menu</span>
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation" data-primary-nav>
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#resume">Resume</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero case-hero--healthcare" id="overview" aria-labelledby="case-title">
+      <div class="container case-hero__grid">
+        <div class="case-hero__content reveal">
+          <p class="eyebrow">Healthcare · Clinical workflow design</p>
+          <h1 id="case-title">Designing a clinician-controlled oncology workflow</h1>
+          <p class="case-hero__summary">
+            A zero-to-one engagement connecting professional onboarding, patient registration, case management, treatment planning, chemotherapy scheduling, treatment sessions, and follow-up in one longitudinal platform.
+			Delivered through Techtrail Consultancy Services. The end client, geography, release scale, and all patient and professional data remain confidential.
+		  </p>
+
+          <ul class="case-hero__facts" aria-label="Project summary">
+            <li>
+              <i class="fa-solid fa-notes-medical" aria-hidden="true"></i>
+              <span>Oncology patient, case, treatment-planning, chemotherapy, and follow-up platform</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-user" aria-hidden="true"></i>
+              <span>Product Designer &amp; React Front-end Contributor</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
+              <span>Approximately six months · confidential pilot and client release</span>
+            </li>
+			<li>
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <span>Product stakeholders, specialist oncologists, engineers, QA, and clinical users</span>
+            </li>
+			<li>
+              <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+              <span>Owned product workflows, information architecture, navigation, forms, interaction states, UI, prototyping, and React contribution</span>
+            </li> 
+          </ul> 
+        </div>
+
+         <figure class="case-hero__visual reveal is-visible">
+			<div class="screen-frame"> 
+				<img alt="Oncology operational dashboard showing active cases, appointments, staff availability, and the daily patient queue" height="1003" src="assets/images/oncology/dashboard.png" width="2048">
+			</div> 
+		</figure>
+      </div>
+    </section>
+
+    <nav class="case-nav" aria-label="Case study sections" data-case-nav>
+      <div class="container case-nav__inner">
+        <a class="is-active" href="#challenge">Challenge</a>
+        <a href="#product-model">Product model</a>
+        <a href="#decisions">Decisions</a>
+        <a href="#collaboration">Collaboration</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#reflection">Reflection</a>
+      </div>
+    </nav> 
+
+    <section class="section section--alt" id="challenge" data-section aria-labelledby="challenge-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">02</span>
+          <div>
+            <p class="eyebrow">Context and challenge</p>
+            <h2 id="challenge-title">Connecting clinical decisions, operational coordination, and longitudinal care</h2>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--wide-media">
+          <div class="prose reveal">
+            <p class="lead">
+              The client needed more than a patient-record interface. The product had to connect patient administration, case ownership, treatment planning, chemotherapy delivery, and follow-up across several professional roles.
+             
+              The existing problem space was fragmented across clinical and administrative activities. Designing each stage as an isolated feature would make teams repeatedly relocate the patient, reconstruct context, and reconcile treatment information across separate parts of the workflow.
+            </p>
+            <p>
+              The platform also generated medicine suggestions from predefined clinical rules reviewed by specialist oncologists. The system could support professional judgment, but the treating oncologist needed to remain visibly responsible for modifying and confirming the final treatment plan.
+            </p>
+
+            <div class="challenge-card">
+              <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              <div>
+                <h3>Design challenge</h3>
+                <p>How might we connect patient administration, oncology case management, treatment planning, chemotherapy delivery, and follow-up in one coherent workflow while keeping clinicians visibly in control?</p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="media-card reveal">
+            <a
+              class="zoom-link"
+              href="assets/images/oncology/dashboard.png"
+              data-zoom-link
+              data-zoom-caption="Operational dashboard showing active cases, appointments, staff availability, and the daily patient queue."
+            >
+              <img
+                src="assets/images/oncology/dashboard.png"
+                width="1600"
+                height="783"
+                loading="lazy"
+                alt="Oncology operational dashboard image pending final replacement"
+              >
+            </a>
+            <figcaption>
+              <strong>Operational starting point.</strong> The final image will show active cases, appointments, staff availability, and the daily workload using synthetic data.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="product-model" data-section aria-labelledby="product-model-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">03</span>
+          <div>
+            <p class="eyebrow">Clinical inputs and product synthesis</p>
+            <h2 id="product-model-title">Translated team-led clinical discovery into one coherent product model</h2>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--balanced">
+          <div class="prose reveal">
+            <p>
+              Research and clinical discovery were led by the wider team. I did not personally conduct the interviews or formal usability studies. My responsibility was to interpret the documented inputs, specialist review, and product requirements and translate them into workflows, information architecture, forms, states, and interaction behaviour.
+            </p>
+            <p>
+              Specialist oncologists validated terminology, treatment rules, regimen logic, and dosage-related requirements. I used that input to determine how information should be structured, where plan-level and session-level data needed to separate, and where clinician authority needed to remain explicit.
+            </p>
+          </div>
+
+          <aside class="insight-callout insight-callout--healthcare reveal" aria-label="Central product insight">
+            <h3>The patient case—not an individual form—needed to be the organising object.</h3>
+          </aside>
+        </div>
+
+        <div class="subsection-heading reveal">
+          <p class="eyebrow">Clinical input to design decision</p>
+          <h3>An anonymised synthesis of the evidence that shaped the product</h3>
+          <p>These are consolidated product inputs, not direct participant quotations.</p>
+        </div>
+
+        <div class="clinical-evidence-grid reveal" aria-label="Clinical inputs mapped to product decisions">
+          <article class="clinical-evidence-card">
+            <span class="clinical-evidence-card__icon"><i class="fa-solid fa-folder-tree" aria-hidden="true"></i></span>
+            <p class="eyebrow">Clinical input</p>
+            <h3>Care continued across multiple stages and roles</h3>
+            <p>Patient, diagnosis, treatment, and follow-up context could not fragment when ownership or task changed.</p>
+            <div class="clinical-evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Product decision</p>
+            <p class="clinical-evidence-card__response">Create one persistent case workspace across the longitudinal journey.</p>
+          </article>
+
+          <article class="clinical-evidence-card">
+            <span class="clinical-evidence-card__icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>
+            <p class="eyebrow">Clinical input</p>
+            <h3>A treatment plan and a treatment sitting were not the same record</h3>
+            <p>Protocol intent, cycle schedule, session activity, delays, and follow-up required related but distinct structures.</p>
+            <div class="clinical-evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Product decision</p>
+            <p class="clinical-evidence-card__response">Separate plan-level, cycle-level, sitting-level, and follow-up information.</p>
+          </article>
+
+          <article class="clinical-evidence-card">
+            <span class="clinical-evidence-card__icon"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span>
+            <p class="eyebrow">Clinical input</p>
+            <h3>Rule-based suggestions could not replace professional judgment</h3>
+            <p>Generated medicines needed specialist-approved logic and an explicit path for clinician modification.</p>
+            <div class="clinical-evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
+            <p class="eyebrow">Product decision</p>
+            <p class="clinical-evidence-card__response">Keep generated suggestions editable and the final plan clinician-controlled.</p>
+          </article>
+        </div>
+
+        <div class="subsection-heading reveal">
+          <p class="eyebrow">Multi-role system</p>
+          <h3>Shared patient context, different workflow responsibilities</h3>
+          <p>The available materials support these workflow responsibilities; they do not fully document every role-by-role permission rule.</p>
+        </div>
+
+        <div class="role-map reveal" aria-label="Primary user roles and workflow responsibilities">
+          <article class="role-card">
+            <span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span>
+            <h3>Oncologists</h3>
+            <p>Reviewed clinical context, created or modified treatment plans, and retained responsibility for the final treatment decision.</p>
+          </article>
+          <article class="role-card">
+            <span><i class="fa-solid fa-user-nurse" aria-hidden="true"></i></span>
+            <h3>Nurses and clinical support</h3>
+            <p>Supported treatment-session activity, observations, documentation, and follow-up continuity.</p>
+          </article>
+          <article class="role-card">
+            <span><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+            <h3>Medical administrators</h3>
+            <p>Supported patient registration, appointments, records, and operational coordination.</p>
+          </article>
+          <article class="role-card">
+            <span><i class="fa-solid fa-people-roof" aria-hidden="true"></i></span>
+            <h3>Case coordinators and hospital staff</h3>
+            <p>Supported case continuity, scheduling, institutional association, and transfer-related work.</p>
+          </article>
+        </div>
+
+        <div class="workflow-panel reveal">
+          <div class="workflow-panel__heading">
+            <p class="eyebrow">End-to-end workflow</p>
+            <h3>One connected journey across clinical and administrative work</h3>
+          </div>
+          <ol class="workflow-strip" aria-label="Oncology product workflow">
+            <li><span><i class="fa-solid fa-user-plus" aria-hidden="true"></i></span><strong>Professional onboarding</strong></li>
+            <li><span><i class="fa-solid fa-table-columns" aria-hidden="true"></i></span><strong>Operational dashboard</strong></li>
+            <li><span><i class="fa-solid fa-hospital-user" aria-hidden="true"></i></span><strong>Patient registration</strong></li>
+            <li><span><i class="fa-solid fa-folder-plus" aria-hidden="true"></i></span><strong>Case creation</strong></li>
+            <li><span><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></span><strong>Initial assessment</strong></li>
+            <li><span><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span><strong>Treatment plan</strong></li>
+            <li><span><i class="fa-regular fa-calendar-days" aria-hidden="true"></i></span><strong>Cycle scheduling</strong></li>
+            <li><span><i class="fa-solid fa-syringe" aria-hidden="true"></i></span><strong>Chemotherapy sitting</strong></li>
+            <li><span><i class="fa-solid fa-file-medical" aria-hidden="true"></i></span><strong>Follow-up</strong></li>
+            <li><span><i class="fa-solid fa-right-left" aria-hidden="true"></i></span><strong>Transfer or archive</strong></li>
+          </ol>
+        </div>
+
+        <div class="subsection-heading reveal">
+          <p class="eyebrow">Case views—not a mandatory sequence</p>
+          <h3>Supporting different states of ownership and review</h3>
+          <p>Active, pending approval, transferred, and archived were distinct case views or states. “All cases” was a consolidated view, not another lifecycle step.</p>
+        </div>
+ 
+
+        <figure class="media-card media-card--spaced reveal">
+          <a
+            class="zoom-link"
+            href="assets/images/oncology/case-listing.png"
+            data-zoom-link
+            data-zoom-caption="Case-management workspace separating active, pending, transferred, archived, and all-case views."
+          >
+            <img
+              src="assets/images/oncology/case-listing.png"
+              width="1600"
+              height="783"
+              loading="lazy"
+              alt="Oncology case-listing image pending final replacement"
+            >
+          </a> 
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="decisions" data-section aria-labelledby="decisions-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">04</span>
+          <div>
+            <p class="eyebrow">Design decisions</p>
+            <h2 id="decisions-title">Three decisions shaped the clinical workflow</h2>
+          </div>
+        </div>
+
+        <div class="decision-stack">
+          <article class="decision-card reveal" style="grid-template-columns: minmax(0, 50fr) minmax(0, 0.28fr);">
+            <div class="decision-card__content">
+              <span class="decision-card__number">01</span>
+              <p class="eyebrow">Longitudinal case model</p>
+              <h3>Organise the product around one persistent patient case</h3>
+
+              <dl class="decision-rationale">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>The patient journey crossed registration, assessment, treatment planning, chemotherapy sessions, follow-up, and possible transfer.</dd>
+                </div>
+                <div>
+                  <dt>Design response</dt>
+                  <dd>Create one case workspace with focused areas for Case Summary, Profile, Initial Assessment, Treatment Plan, Follow-up Appointment, and Chemotherapy Sitting.</dd>
+                </div>
+                <div>
+                  <dt>Why it mattered</dt>
+                  <dd>Essential patient and treatment context remained available while the user moved between stages and responsibilities.</dd>
+                </div>
+              </dl>
+
+              <ul class="check-list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> One case identity across the treatment journey</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Persistent patient and treatment context</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Separate views for ownership, review, transfer, and archive</li>
+              </ul>
+            </div>
+ 
+          </article>
+
+          <article class="decision-card decision-card--reverse decision-card--wide-visual reveal">
+            <div class="decision-card__content">
+              <span class="decision-card__number">02</span>
+              <p class="eyebrow">Clinical workflow structure</p>
+              <h3>Separate treatment planning from chemotherapy execution</h3>
+
+              <dl class="decision-rationale">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Treatment intent, regimen, cycle planning, consent, individual sittings, delays, dosage information, supportive treatments, and follow-up could not live in one undifferentiated form.</dd>
+                </div>
+                <div>
+                  <dt>Design response</dt>
+                  <dd>Separate protocol-level planning from cycle and sitting-level documentation, while retaining a relationship to follow-up.</dd>
+                </div>
+                <div>
+                  <dt>Why it mattered</dt>
+                  <dd>The care team could preserve a coherent treatment plan and maintain the history of each treatment event and schedule change.</dd>
+                </div>
+              </dl>
+
+              <div class="cycle-delay-flow" aria-label="Chemotherapy cycle delay workflow">
+                <div><span>1</span><strong>Planned cycle date</strong></div>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <div><span>2</span><strong>Record delay and reason</strong></div>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <div><span>3</span><strong>Review revised date and downstream schedule</strong></div>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                <div><span>4</span><strong>Save the updated sitting to case history</strong></div>
+              </div>
+              <p class="evidence-boundary">This flow describes the supported scheduling logic without claiming that every date was recalculated automatically.</p>
+            </div>
+ 
+          </article>
+
+          <article class="decision-card reveal">
+            <div class="decision-card__content">
+              <span class="decision-card__number">03</span>
+              <p class="eyebrow">Human-in-the-loop decision support</p>
+              <h3>Keep rule-based suggestions under clinician control</h3>
+
+              <dl class="decision-rationale">
+                <div>
+                  <dt>Problem</dt>
+                  <dd>Automatically populated medicine suggestions could improve consistency, but they could not be presented as an unquestionable final treatment decision.</dd>
+                </div>
+                <div>
+                  <dt>Design response</dt>
+                  <dd>Place rule-based suggestions inside the clinician’s treatment workflow and allow the oncologist to modify them before the plan was confirmed.</dd>
+                </div>
+                <div>
+                  <dt>Why it mattered</dt>
+                  <dd>The product retained the benefit of predefined clinical rules while keeping professional authority explicit.</dd>
+                </div>
+              </dl>
+
+              
+            </div>
+
+            <div class="decision-card__visual">
+              <div class="human-loop" aria-label="Rule-based medicine suggestion flow">
+                <div class="human-loop__step">
+                  <span><i class="fa-solid fa-file-waveform" aria-hidden="true"></i></span>
+                  <strong>Structured clinical inputs</strong>
+                </div>
+                <i class="fa-solid fa-arrow-right human-loop__arrow" aria-hidden="true"></i>
+                <div class="human-loop__step">
+                  <span><i class="fa-solid fa-code-branch" aria-hidden="true"></i></span>
+                  <strong>Predefined clinical rules</strong>
+                </div>
+                <i class="fa-solid fa-arrow-right human-loop__arrow" aria-hidden="true"></i>
+                <div class="human-loop__step human-loop__step--generated">
+                  <span><i class="fa-solid fa-pills" aria-hidden="true"></i></span>
+                  <strong>System-generated suggestion</strong>
+                </div>
+                <i class="fa-solid fa-arrow-right human-loop__arrow" aria-hidden="true"></i>
+                <div class="human-loop__step human-loop__step--human">
+                  <span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span>
+                  <strong>Clinician reviews and modifies</strong>
+                </div>
+                <i class="fa-solid fa-arrow-right human-loop__arrow" aria-hidden="true"></i>
+                <div class="human-loop__step human-loop__step--final">
+                  <span><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
+                  <strong>Clinician-confirmed plan</strong>
+                </div>
+              </div> 
+			<div class="guardrail-card guardrail-card--clinical">
+                <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+                <p><strong>Clinical boundary:</strong> Specialist oncologists validated the rule logic and terminology; the treating oncologist retained responsibility for the final treatment decision.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+  
+      </div>
+    </section>
+
+    <section class="section" id="collaboration" data-section aria-labelledby="collaboration-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">05</span>
+          <div>
+            <p class="eyebrow">Cross-functional collaboration</p>
+            <h2 id="collaboration-title">Balancing clinical consistency, usability, and professional authority</h2>
+          </div>
+        </div>
+
+        <div class="clinical-tradeoff reveal">
+          <article class="clinical-tradeoff__story">
+            <p class="eyebrow">Design trade-off</p>
+            <h3>Use predefined rules without presenting them as the final clinical answer</h3>
+            <p>
+              The product needed to make established treatment logic available within the workflow without obscuring who owned the final decision. Specialist oncologists validated the clinical rules and terminology. I translated that input into an editable suggestion flow, while product and engineering shaped scope, data behaviour, and implementation feasibility.
+            </p>
+            <p>
+              The resulting model preserved consistency and speed while keeping the treating oncologist visibly responsible for reviewing, modifying, and confirming the plan.
+            </p>
+          </article>
+
+          <dl class="discipline-map">
+            <div>
+              <dt><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Clinical specialists</dt>
+              <dd>Validated terminology, regimen logic, dosage-related requirements, and the predefined treatment rules.</dd>
+            </div>
+            <div>
+              <dt><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i> My design role</dt>
+              <dd>Structured the workflow, information hierarchy, forms, states, and clinician-modification path.</dd>
+            </div>
+            <div>
+              <dt><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Product and engineering</dt>
+              <dd>Defined product scope, backend behaviour, technical feasibility, integration, QA, and deployment.</dd>
+            </div>
+          </dl>
+        </div> 
+      </div>
+    </section>
+
+    <section class="section section--alt" id="delivery" data-section aria-labelledby="delivery-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-heading__number">06</span>
+          <div>
+            <p class="eyebrow">Design to delivery</p>
+            <h2 id="delivery-title">From product architecture to a confidential React client release</h2>
+          </div>
+        </div>
+
+        <div class="split-layout split-layout--balanced">
+          <div class="prose reveal">
+            <p>
+              As the designer, I defined the product workflows, information architecture, navigation, forms, interaction states, and visual design. I also contributed to the ReactJS front end by translating approved page structures, navigation, forms, validation states, and interaction behaviour into the working product.
+            </p>
+            <p>
+              The available material does not preserve exact module-by-module code ownership, so I do not claim that I independently built the full released application. Backend services, integration, QA, deployment, and the final client environment were owned by the wider team.
+            </p>
+            <p>
+              The product progressed through a confidential pilot and client release involving real clinical and administrative users. Release scale, client acceptance details, usage data, and clinical or business outcomes remain confidential or unavailable.
+            </p>
+          </div>
+
+          <ol class="delivery-flow delivery-flow--clinical reveal" aria-label="Product delivery flow">
+            <li><span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i></span><strong>Clinical inputs</strong><small>Team-led discovery and specialist validation</small></li>
+            <li><span><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></span><strong>Product model</strong><small>Workflows, IA, roles, states, and forms</small></li>
+            <li><span><i class="fa-brands fa-figma" aria-hidden="true"></i></span><strong>High-fidelity design</strong><small>Connected end-to-end experience</small></li>
+            <li><span><i class="fa-brands fa-react" aria-hidden="true"></i></span><strong>React contribution</strong><small>Page structures, forms, and interactions</small></li>
+            <li><span><i class="fa-solid fa-microscope" aria-hidden="true"></i></span><strong>Clinical review</strong><small>Terminology and rule validation</small></li>
+            <li><span><i class="fa-solid fa-vial-circle-check" aria-hidden="true"></i></span><strong>Confidential pilot</strong><small>Real clinical and administrative users</small></li>
+            <li><span><i class="fa-solid fa-rocket" aria-hidden="true"></i></span><strong>Client release</strong><small>Scale and outcome details remain confidential</small></li>
+          </ol>
+        </div>
+ 
+      </div>
+    </section>
+
+     
+
+    <section class="project-navigation" aria-label="Project navigation">
+      <div class="container project-navigation__inner">
+        <a class="project-navigation__link" href="ems.html">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>
+            <small>Previous case study</small>
+            <strong>Travel &amp; Expense Approval</strong>
+          </span>
+        </a> 
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <a class="brand brand--footer" href="index.html" aria-label="Gaurank Patil home">
+          <span class="brand__mark" aria-hidden="true">GP</span>
+          <span class="brand__text">
+            <strong>Gaurank Patil</strong>
+            <span>Senior Product Designer</span>
+          </span>
+        </a>
+        <p>Designing clear, scalable experiences for complex products.</p>
+      </div>
+
+      <div class="site-footer__contact" id="contact">
+        <p class="eyebrow">Get in touch</p>
+        <a href="mailto:pgaurank@gmail.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> pgaurank@gmail.com</a>
+      </div>
+
+      <p class="site-footer__copyright">© <span data-current-year></span> Gaurank Patil</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <dialog class="image-dialog" data-image-dialog aria-labelledby="image-dialog-caption">
+    <div class="image-dialog__surface">
+      <button class="image-dialog__close" type="button" aria-label="Close image preview" data-dialog-close>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <img data-dialog-image alt="">
+      <p id="image-dialog-caption" data-dialog-caption></p>
+    </div>
+  </dialog>
+</body>
+</html>

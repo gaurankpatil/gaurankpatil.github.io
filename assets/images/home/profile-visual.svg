@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="840" viewBox="0 0 760 840" role="img" aria-labelledby="title desc">
+  <title id="title">Abstract professional profile visual</title>
+  <desc id="desc">A blue editorial illustration with the initials GP and geometric product design motifs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#d7eaff"/>
+    </linearGradient>
+    <linearGradient id="primary" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0067d2"/>
+      <stop offset="1" stop-color="#2b83e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#10233f" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="760" height="840" fill="url(#bg)"/>
+  <circle cx="622" cy="126" r="154" fill="#c6e1ff" opacity="0.72"/>
+  <circle cx="124" cy="728" r="180" fill="#ffffff" opacity="0.62"/>
+  <path d="M80 190C260 70 410 120 590 32" fill="none" stroke="#9cc9f7" stroke-width="3"/>
+  <path d="M180 812C310 620 500 650 720 476" fill="none" stroke="#9cc9f7" stroke-width="3"/>
+
+  <g filter="url(#shadow)">
+    <rect x="130" y="125" width="500" height="590" rx="42" fill="#ffffff"/>
+  </g>
+
+  <g transform="translate(205 195)">
+    <circle cx="175" cy="160" r="128" fill="url(#primary)"/>
+    <circle cx="175" cy="131" r="62" fill="#ddecfb"/>
+    <path d="M68 303c27-74 88-110 107-110s80 36 107 110" fill="#ddecfb"/>
+    <circle cx="175" cy="160" r="128" fill="none" stroke="#ffffff" stroke-width="12" opacity="0.86"/>
+  </g>
+
+  <text x="380" y="590" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="92" font-weight="800" fill="#07172f">GP</text>
+  <text x="380" y="640" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3" fill="#0067d2">PRODUCT DESIGNER</text>
+
+  <g transform="translate(154 666)" fill="none" stroke="#0067d2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="0" width="92" height="58" rx="12"/>
+    <path d="M26 18h40M26 31h26"/>
+    <circle cx="228" cy="29" r="27"/>
+    <path d="M218 29l8 8 15-18"/>
+    <path d="M426 5v48M402 29h48"/>
+  </g>
+</svg>

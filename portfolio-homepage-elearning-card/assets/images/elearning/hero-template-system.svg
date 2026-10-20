@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic compliance-learning template system</title>
+  <desc id="desc">A light course template, dark course template, and interaction template arranged as a portfolio hero composition.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#d8eaff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#10233f" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" rx="36" fill="url(#bg)"/>
+  <circle cx="1350" cy="130" r="210" fill="#0067d2" opacity=".08"/>
+  <circle cx="190" cy="860" r="250" fill="#f28b3c" opacity=".10"/>
+
+  <g filter="url(#shadow)" transform="translate(105 115) rotate(-2 455 295)">
+    <rect width="930" height="590" rx="26" fill="#fff"/>
+    <rect width="930" height="56" rx="26" fill="#07172f"/>
+    <circle cx="34" cy="28" r="7" fill="#ff7b73"/>
+    <circle cx="57" cy="28" r="7" fill="#ffd36a"/>
+    <circle cx="80" cy="28" r="7" fill="#6fd79a"/>
+    <rect x="40" y="86" width="178" height="18" rx="9" fill="#0067d2" opacity=".18"/>
+    <rect x="40" y="120" width="520" height="34" rx="8" fill="#07172f"/>
+    <rect x="40" y="175" width="485" height="14" rx="7" fill="#9aabc0"/>
+    <rect x="40" y="202" width="420" height="14" rx="7" fill="#c4cfdb"/>
+    <rect x="40" y="252" width="490" height="245" rx="18" fill="#eef6ff"/>
+    <rect x="565" y="252" width="325" height="245" rx="18" fill="#0067d2"/>
+    <circle cx="727" cy="355" r="68" fill="#fff" opacity=".22"/>
+    <rect x="625" y="444" width="204" height="20" rx="10" fill="#fff" opacity=".9"/>
+    <rect x="40" y="530" width="118" height="20" rx="10" fill="#0067d2"/>
+    <rect x="742" y="530" width="148" height="20" rx="10" fill="#f28b3c"/>
+    <text x="40" y="575" font-family="Inter, Arial" font-size="17" fill="#53657a">Course • Section • 4 of 7</text>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(875 300) rotate(3 305 230)">
+    <rect width="610" height="460" rx="24" fill="#07172f"/>
+    <rect x="30" y="30" width="110" height="14" rx="7" fill="#79b8ff"/>
+    <rect x="30" y="66" width="425" height="30" rx="8" fill="#fff"/>
+    <rect x="30" y="120" width="520" height="13" rx="6" fill="#8092aa"/>
+    <rect x="30" y="145" width="460" height="13" rx="6" fill="#63768f"/>
+    <g transform="translate(30 195)">
+      <rect width="165" height="170" rx="16" fill="#10233f" stroke="#2b405e"/>
+      <rect x="190" width="165" height="170" rx="16" fill="#10233f" stroke="#2b405e"/>
+      <rect x="380" width="165" height="170" rx="16" fill="#10233f" stroke="#2b405e"/>
+      <circle cx="82" cy="48" r="22" fill="#0067d2"/>
+      <circle cx="272" cy="48" r="22" fill="#f28b3c"/>
+      <circle cx="462" cy="48" r="22" fill="#79b8ff"/>
+      <rect x="34" y="91" width="96" height="11" rx="5" fill="#fff" opacity=".9"/>
+      <rect x="224" y="91" width="96" height="11" rx="5" fill="#fff" opacity=".9"/>
+      <rect x="414" y="91" width="96" height="11" rx="5" fill="#fff" opacity=".9"/>
+      <rect x="26" y="118" width="112" height="9" rx="4" fill="#8092aa"/>
+      <rect x="216" y="118" width="112" height="9" rx="4" fill="#8092aa"/>
+      <rect x="406" y="118" width="112" height="9" rx="4" fill="#8092aa"/>
+    </g>
+    <text x="30" y="425" font-family="Inter, Arial" font-size="16" fill="#b7c6d8">Dark theme • Interaction states • Accessible focus</text>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(780 700)">
+    <rect width="560" height="210" rx="22" fill="#fff"/>
+    <rect x="30" y="28" width="155" height="16" rx="8" fill="#0067d2" opacity=".18"/>
+    <g transform="translate(30 72)">
+      <rect width="105" height="58" rx="12" fill="#f7f9fc" stroke="#dfe7f0"/>
+      <rect x="118" width="105" height="58" rx="12" fill="#eef6ff" stroke="#79b8ff" stroke-width="3"/>
+      <rect x="236" width="105" height="58" rx="12" fill="#eef6ff" stroke="#0067d2" stroke-width="2"/>
+      <rect x="354" width="105" height="58" rx="12" fill="#ecfbf5" stroke="#0b8f65" stroke-width="2"/>
+      <rect x="472" width="58" height="58" rx="12" fill="#fff1f1" stroke="#c43d3d" stroke-width="2"/>
+      <text x="20" y="36" font-family="Inter, Arial" font-size="13" fill="#53657a">Default</text>
+      <text x="146" y="36" font-family="Inter, Arial" font-size="13" fill="#0067d2">Focus</text>
+      <text x="257" y="36" font-family="Inter, Arial" font-size="13" fill="#0067d2">Selected</text>
+      <text x="372" y="36" font-family="Inter, Arial" font-size="13" fill="#0b8f65">Complete</text>
+    </g>
+    <text x="30" y="175" font-family="Inter, Arial" font-size="16" fill="#10233f">One shared interaction language across template families</text>
+  </g>
+</svg>

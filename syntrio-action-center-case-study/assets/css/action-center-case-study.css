@@ -589,6 +589,100 @@
   box-shadow: var(--shadow-md);
 }
 
+
+/* Combined decisions 01 and 02 */
+
+.decision-card--combined {
+  grid-template-columns:
+    minmax(0, 0.92fr)
+    minmax(0, 1.28fr);
+  align-items: stretch;
+}
+
+.decision-card__content--combined {
+  display: grid;
+  align-content: start;
+  gap: var(--space-10);
+}
+
+.decision-subsection {
+  min-width: 0;
+}
+
+.decision-subsection + .decision-subsection {
+  padding-top: var(--space-10);
+  border-top: 1px solid var(--color-border);
+}
+
+.decision-subsection__heading {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.decision-subsection__heading .decision-card__number {
+  margin-bottom: 0;
+}
+
+.decision-subsection__heading .eyebrow {
+  margin-bottom: var(--space-2);
+}
+
+.decision-subsection__heading h3 {
+  margin-bottom: 0;
+}
+
+.decision-subsection > p {
+  color: var(--color-text-muted);
+}
+
+.decision-card__visual--dashboard {
+  justify-content: flex-start;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.decision-card__visual--dashboard .zoom-link {
+  display: block;
+  width: 100%;
+}
+
+.decision-card__visual--dashboard img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top center;
+}
+
+/* Stack the combined card on tablet and mobile */
+
+@media (max-width: 68rem) {
+  .decision-card--combined {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-card__content--combined {
+    gap: var(--space-8);
+  }
+
+  .decision-subsection + .decision-subsection {
+    padding-top: var(--space-8);
+  }
+}
+
+/* Simplify the internal decision headings on narrow mobile screens */
+
+@media (max-width: 35rem) {
+  .decision-subsection__heading {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-subsection__heading .decision-card__number {
+    width: 2.75rem;
+  }
+}
+
 @media (max-width: 78rem) {
   .role-grid,
   .principle-grid {

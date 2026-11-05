@@ -334,7 +334,6 @@
                 loading="lazy"
                 alt="Placeholder for dashboard category cards showing report ageing bands"
               >
-              <figcaption>Replace with a tight crop of the category-level ageing visualisation.</figcaption>
             </figure>
           </article>
 
@@ -344,10 +343,8 @@
               <p class="eyebrow">Risk semantics</p>
               <h3>Separate policy risk from ordinary ageing</h3>
               <p>
-                A report could require attention because it was old, because it violated policy, or because both were true. I surfaced policy state directly in the report summary instead of collapsing every concern into one generic warning.
-              </p>
-              <p>
-                This gave the approver context at the point of decision and made it clear why a report required individual review.
+                A report could require attention because it was old, because it violated policy or because both were true. 
+				  I surfaced policy state directly in the report summary. This was intended to help approvers understand the reason for attention before choosing the next action.
               </p>
               <div class="guardrail-card">
                 <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
@@ -371,11 +368,12 @@
               <p class="eyebrow">Efficiency with safeguards</p>
               <h3>Make routine approval faster, with explicit guardrails</h3>
               <p>
-                Processing low-risk reports one by one created unnecessary repetition, but a universal “Approve all” action would make the scope and policy implications unsafe.
+				Routine requests involved repeated approval actions. A wider selection could make it harder to understand which requests would be affected, especially when policy exceptions were present.
               </p>
               <p>
-                I introduced page-level selection for eligible reports. Policy-breach reports were excluded, and approval confirmation and rejection-reason capture provided accountability around consequential actions.
-              </p>
+                Introduced page-level selection for eligible reports. Policy-breach reports were excluded, approval confirmation and rejection-reason capture provided accountability around consequential actions. 
+				  The action was limited to the current page
+              </p>				
               <ul class="check-list">
                 <li><i class="fa-solid fa-check" aria-hidden="true"></i> Select all applies to the current page</li>
                 <li><i class="fa-solid fa-check" aria-hidden="true"></i> Ineligible reports remain visible but require individual review</li>
@@ -402,17 +400,17 @@
            <!-- <span class="section-heading__number">06</span> -->
           <div>
             <p class="eyebrow">Design to code</p>
-            <h2 id="delivery-title">Carried the approved experience into the existing front-end environment</h2>
+            <h2 id="delivery-title">From Figma to the product development</h2>
           </div>
         </div>
 
-        <div class="split-layout split-layout--balanced">
-          <div class="prose reveal">
+        <div class="">
+          <!-- <div class="prose reveal">
             <p>
-              After the design direction was reviewed, Translated the interface into the existing product environment using HTML5, Bootstrap, CSS, and JavaScript. 
+              Following the design direction was reviewed, Translated the interface into the existing product environment using HTML5, Bootstrap, CSS, and JavaScript. 
               My contribution covered the interface structure, responsive styling, and JavaScript interactions required to represent the approved dashboard direction.
             </p> 
-          </div>
+          </div>-->
 
           <ol class="delivery-flow reveal" aria-label="Design to delivery flow">
             <li>

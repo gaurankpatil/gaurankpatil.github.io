@@ -126,20 +126,21 @@
         <div class="split-layout split-layout--wide-media">
           <div class="prose reveal">
             <p class="lead">
-              The approval dashboard contained the information managers needed, but it did not make the next decision obvious.
+              The approval dashboard contained the information managers needed, but approvers still had to work out what needed attention first.				
             </p>
             <p>
-              The broader product was seeing lower-than-expected customer traction, and recurring feedback highlighted the approval experience as one area worth improving. Routine reports, ageing submissions, and policy exceptions could appear similar during scanning, so approvers spent too much time opening individual records before understanding which work required attention first.
+              The broader product was seeing lower-than-expected customer traction, and recurring feedback highlighted the approval experience as one area worth improving. 
+				Routine reports, ageing submissions, and policy exceptions could appear similar during scanning, 
+				Approvers described opening individual records and spending too much time to understand which requests needed attention, particularly when older submissions and policy exceptions appeared alongside routine work.
             </p>
             <p>
-              The redesign also had to work within an existing backend, established approval logic, and policy rules that varied by client. The objective was to improve the decision experience without rebuilding the core system.
-            </p> 
+              The goal was to improve the decision experience without rebuilding the core system.
+            </p>
             <div class="challenge-card">
               <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
               <div>
                 <h3>Design challenge / Client feedback</h3>
-                <p>How might we help approvers identify what requires attention, understand why it requires attention, and take the appropriate action without opening every report?
-				Approvers described spending too much time identifying which reports required attention first.</p>
+                <p>How might we help approvers identify what requires attention, understand why it requires attention and take the appropriate action without opening every report?
               </div>
             </div>
           </div>
@@ -168,27 +169,24 @@
           <!-- <span class="section-heading__number">03</span> -->
           <div>
             <p class="eyebrow">Discovery and insight</p>
-            <h2 id="insights-title">Lightweight research, focused on how people made approval decisions</h2>
+            <h2 id="insights-title">Research focused on how people made approval decisions</h2>
           </div>
         </div>
 
         <div class="split-layout split-layout--balanced">
           <div class="prose reveal">
             <p> Communicated with a small set of
-			  client-side expense approvers in managerial and finance-oriented roles
+			  client-side expense approvers in managerial and finance roles
 			  and reviewed how they identified pending work, interpreted exceptions,
-			  and decided what required attention first.
+			  and decided what required attention first and the entire user journey.
 			</p>
 			<p>
 			   Combined those conversations with workflow walkthroughs, recurring
-			  client feedback, support issues, and an assessment of the existing
-			  interface. The findings were used to identify repeated workflow
-			  patterns; they were not treated as statistically representative
-			  research or formal usability validation of the final design.</p>
+			  client feedback, support issues and an assessment of the existing
+			  experience.</p>
           </div>
-
           <aside class="insight-callout reveal" aria-label="Central research insight">  
-            <h3>Approvers were spending too much effort scanning before they could act.</h3>
+            <h3>Approvers needed a clearer starting point for deciding what to review.</h3>
           </aside>
         </div>
 
@@ -207,8 +205,8 @@
           <article class="evidence-card">
             <span class="evidence-card__icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></span>
             <p class="eyebrow">Evidence</p>
-            <h3>Counts did not show urgency</h3>
-            <p>Pending volume alone did not reveal how long work had been waiting.</p>
+            <h3>Counts shows volume but not urgency</h3>
+            <p>Pending volume alone did not reveal how long work expenses had been waiting.</p>
             <div class="evidence-card__arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></div>
             <p class="eyebrow">Design response</p>
             <p class="evidence-card__response">Show ageing bands for 0–7, 8–14, and 15+ days.</p>
@@ -242,9 +240,45 @@
            <!-- <span class="section-heading__number">04</span> -->
           <div>
             <p class="eyebrow">Intended success criteria</p>
-            <h2 id="insights-title">These criteria guided the solution and describe what would measure in an integrated release. They are not presented as achieved outcomes.</h2>
+            <h2 id="insights-title">How I would evaluate the redesign</h2>
           </div>
         </div>
+
+<div class="outcome-grid outcome-grid--compact reveal" aria-label="Proposed tasks and measures">
+          <article class="outcome-card">
+            <span class="outcome-card__icon"><i class="fa-solid fa-ranking-star" aria-hidden="true"></i></span>
+            <h3>Find older requests</h3>
+            <ul>
+              <li><strong>Task:</strong> Find a request in the 15+ day band.</li>
+              <li><strong>Measure:</strong> Correct identification, time taken, and navigation path.</li>
+            </ul>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            <h3>Interpret policy state</h3>
+            <ul>
+              <li><strong>Task:</strong> Compare an older request without an exception with a newer request containing one.</li>
+              <li><strong>Measure:</strong> Interpretation of each status and the chosen next action.</li>
+            </ul>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+            <h3>Understand selection scope</h3>
+            <ul>
+              <li><strong>Task:</strong> Select eligible requests from the current page.</li>
+              <li><strong>Measure:</strong> Selection errors and understanding of page scope and policy exclusions.</li>
+            </ul>
+          </article>
+          <article class="outcome-card">
+            <span class="outcome-card__icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+            <h3>Understand the result</h3>
+            <ul>
+              <li><strong>Task:</strong> Respond to a failed or partially completed approval action.</li>
+              <li><strong>Measure:</strong> Understanding of what succeeded, what failed, and how to recover.</li>
+            </ul>
+          </article>
+        </div>
+		
 		<div
 		  class="outcome-grid outcome-grid--compact reveal"
 		  aria-label="Intended success criteria"

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/css/case-study.css">
 
   <script src="assets/js/case-study.js" defer></script>
+	<script src="assets/js/image-viewer.js" defer></script>
 </head>
 <body
   data-case-study-status="frozen"
@@ -91,12 +92,40 @@
  
         <figure class="case-hero__visual reveal m-0">
           <div class="screen-frame">
-            <img
-			  src="assets/images/placeholders/ApprovalDesk.png"
-              width="1600"
-              height="900"
-              alt="Placeholder showing a redesigned enterprise expense approval dashboard"
-            >
+            <a
+			  class="portfolio-image-trigger"
+			  href="assets/images/placeholders/ApprovalDesk.png"
+			  data-image-viewer
+			  data-image-title="Redesigned approval dashboard"
+			  aria-label="View full size: Redesigned approval dashboard"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			>
+			  <img
+				src="assets/images/placeholders/ApprovalDesk.png"
+				width="1600"
+				height="900"
+				alt="a redesigned enterprise expense approval dashboard"
+			  >
+			
+			  <span class="portfolio-image-trigger__label">
+				<svg
+				  width="18"
+				  height="18"
+				  viewBox="0 0 24 24"
+				  fill="none"
+				  stroke="currentColor"
+				  stroke-width="1.8"
+				  stroke-linecap="round"
+				  stroke-linejoin="round"
+				  aria-hidden="true"
+				  focusable="false"
+				>
+				  <path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5M3 3l6 6M21 3l-6 6M21 21l-6-6M3 21l6-6"/>
+				</svg>
+				<span>View full size</span>
+			  </span>
+			</a>
           </div>
         </figure>
       </div>
@@ -146,13 +175,41 @@
           </div>
 
           <figure class="media-card reveal">
-            <img
-              src="assets/images/placeholders/TNE Dashboard_old.png"
-              width="1400"
-              height="900"
-              loading="lazy"
-              alt="Existing expense dashboard with callouts showing prioritisation, policy visibility, and repeated-action issues"
-            >  
+            <a
+			  class="portfolio-image-trigger"
+			  href="assets/images/placeholders/TNE%20Dashboard_old.png"
+			  data-image-viewer
+			  data-image-title="Previous approval dashboard"
+			  aria-label="View full size: Previous approval dashboard"
+			  target="_blank"
+			  rel="noopener noreferrer"
+			>
+			  <img
+			    src="assets/images/placeholders/TNE Dashboard_old.png"
+			    width="1400"
+			    height="900"
+			    loading="lazy"
+			    alt="Existing expense dashboard with callouts showing prioritisation, policy visibility, and repeated-action issues"
+			  >
+			
+			  <span class="portfolio-image-trigger__label">
+			    <svg
+			      width="18"
+			      height="18"
+			      viewBox="0 0 24 24"
+			      fill="none"
+			      stroke="currentColor"
+			      stroke-width="1.8"
+			      stroke-linecap="round"
+			      stroke-linejoin="round"
+			      aria-hidden="true"
+			      focusable="false"
+			    >
+			      <path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5M3 3l6 6M21 3l-6 6M21 21l-6-6M3 21l6-6"/>
+			    </svg>
+			    <span>View full size</span>
+			  </span>
+			</a>
 		   <figcaption>
           <strong>Previous approval experience.</strong>
           Pending work was visible, but urgency, policy risk, and the next
@@ -520,5 +577,123 @@
   <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </button>
+
+	<!-- One image viewer is shared by every data-image-viewer link on this page. -->
+	<dialog
+	  class="portfolio-image-viewer"
+	  id="portfolio-image-viewer"
+	  aria-labelledby="portfolio-image-viewer-title"
+	  aria-describedby="portfolio-image-viewer-help"
+	>
+	  <header class="portfolio-image-viewer__header">
+	    <h2 id="portfolio-image-viewer-title">Design preview</h2>
+	
+	    <button
+	      class="portfolio-image-viewer__close"
+	      type="button"
+	      data-viewer-close
+	      autofocus
+	    >
+	      <span aria-hidden="true">×</span>
+	      <span>Close</span>
+	    </button>
+	  </header>
+	
+	  <div
+	    class="portfolio-image-viewer__toolbar"
+	    role="group"
+	    aria-label="Image controls"
+	  >
+	    <button
+	      type="button"
+	      data-viewer-zoom-out
+	      aria-label="Zoom out"
+	      disabled
+	    >
+	      <span aria-hidden="true">−</span>
+	    </button>
+	
+	    <output
+	      id="portfolio-image-viewer-scale"
+	      aria-label="Image zoom level"
+	      aria-live="polite"
+	      aria-atomic="true"
+	    >Fit</output>
+	
+	    <button
+	      type="button"
+	      data-viewer-zoom-in
+	      aria-label="Zoom in"
+	      disabled
+	    >
+	      <span aria-hidden="true">+</span>
+	    </button>
+	
+	    <button
+	      type="button"
+	      data-viewer-fit
+	      aria-pressed="true"
+	      disabled
+	    >
+	      Fit to screen
+	    </button>
+	
+	    <button
+	      type="button"
+	      data-viewer-actual
+	      aria-label="View image at 100% of its original size"
+	      aria-pressed="false"
+	      disabled
+	    >
+	      100%
+	    </button>
+	
+	    <a
+	      id="portfolio-image-viewer-original"
+	      target="_blank"
+	      rel="noopener noreferrer"
+	    >
+	      Open original
+	      <span class="portfolio-image-viewer__new-tab">(new tab)</span>
+	    </a>
+	  </div>
+	
+	  <p
+	    class="portfolio-image-viewer__help"
+	    id="portfolio-image-viewer-help"
+	  >
+	    Use + or − to zoom. Scroll to inspect details. Press Esc to close.
+	  </p>
+	
+	  <p
+	    class="portfolio-image-viewer__status"
+	    id="portfolio-image-viewer-status"
+	    role="status"
+	    aria-live="polite"
+	    aria-atomic="true"
+	  ></p>
+	
+	  <div
+	    class="portfolio-image-viewer__viewport"
+	    id="portfolio-image-viewer-viewport"
+	    tabindex="0"
+	    role="region"
+	    aria-label="Enlarged design; scroll to inspect details"
+	  >
+	    <div
+	      class="portfolio-image-viewer__canvas"
+	      id="portfolio-image-viewer-canvas"
+	    >
+	      <img
+	        class="portfolio-image-viewer__image"
+	        id="portfolio-image-viewer-image"
+	        alt=""
+	        decoding="async"
+	        hidden
+	      >
+	    </div>
+	  </div>
+	</dialog>
+	
 </body>
 </html>

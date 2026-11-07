@@ -121,23 +121,65 @@
       links.map((link) => [link.getAttribute('href').slice(1), link])
     );
     const sections = Array.from(document.querySelectorAll('[data-section]'));
-
+    const navScroller = caseNav.querySelector('.case-nav__inner');
+    let activeSectionId = null;
+    
     const activateLink = (sectionId) => {
-      links.forEach((link) => {
-        const active = link === linkById.get(sectionId);
-        link.classList.toggle('is-active', active);
-        if (active) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-
       const activeLink = linkById.get(sectionId);
-      if (activeLink) {
-        activeLink.scrollIntoView({
-          behavior: reducedMotion ? 'auto' : 'smooth',
-          block: 'nearest',
-          inline: 'center'
-        });
+    
+      // Skip unknown sections and repeated updates.
+      if (!activeLink || sectionId === activeSectionId) return;
+    
+      activeSectionId = sectionId;
+    
+      // Update the highlighted navigation item.
+      links.forEach((link) => {
+        const active = link === activeLink;
+    
+        link.classList.toggle('is-active', active);
+    
+        if (active) {
+          link.setAttribute('aria-current', 'location');
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+    
+      // When all navigation items fit, no scrolling is needed.
+      if (
+        !navScroller ||
+        navScroller.scrollWidth <= navScroller.clientWidth + 1
+      ) {
+        return;
       }
+    
+      const navRect = navScroller.getBoundingClientRect();
+      const linkRect = activeLink.getBoundingClientRect();
+    
+      const visibleLeft = navRect.left + navScroller.clientLeft;
+      const visibleRight = visibleLeft + navScroller.clientWidth;
+    
+      const fullyVisible =
+        linkRect.left >= visibleLeft - 1 &&
+        linkRect.right <= visibleRight + 1;
+    
+      if (fullyVisible) return;
+    
+      // Calculate a horizontal position inside the navigation bar.
+      const targetLeft =
+        navScroller.scrollLeft +
+        (linkRect.left + linkRect.width / 2) -
+        (visibleLeft + navScroller.clientWidth / 2);
+    
+      const maximumLeft =
+        navScroller.scrollWidth - navScroller.clientWidth;
+    
+      // Scroll only the navigation bar and preserve its vertical position.
+      navScroller.scrollTo({
+        left: Math.max(0, Math.min(maximumLeft, targetLeft)),
+        top: navScroller.scrollTop,
+        behavior: reducedMotion ? 'instant' : 'smooth'
+      });
     };
 
     const sectionObserver = new IntersectionObserver(

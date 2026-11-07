@@ -1778,3 +1778,187 @@ body.portfolio-image-viewer-open {
     overflow: visible;
   }
 }
+/* ==========================================================
+   EMS — Quiet caption
+   Add at the END of assets/css/case-study.css
+   ========================================================== */
+
+
+/* 1. Remove the dark frame */
+
+.case-hero__visual .screen-frame {
+  overflow: visible;
+  padding: 0;
+  border: 0;
+  border-radius: 0.75rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+
+/* 2. Arrange the image, caption, and enlargement cue */
+
+.case-hero__visual .portfolio-image-trigger {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+  width: 100%;
+  min-width: 0;
+  border-radius: 0.75rem;
+  color: var(--color-primary, #0067d2);
+  background: transparent;
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+
+/* 3. Give the image a thin border and restrained shadow */
+
+.case-hero__visual .portfolio-image-trigger > img {
+  display: block;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: 0.75rem;
+  background: var(--color-surface, #ffffff);
+  box-shadow: 0 0.5rem 1.5rem rgb(30 62 101 / 0.07);
+}
+
+
+/* 4. Caption beneath the image, aligned left */
+
+.case-hero__visual .portfolio-image-trigger__caption {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+  margin: 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+
+/* 5. Change the prominent button into a quiet text link */
+
+.case-hero__visual .portfolio-image-trigger__label {
+  display: inline-flex;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.375rem;
+  width: auto;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  margin: 0;
+  padding: 0.375rem 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--color-primary, #0067d2);
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: start;
+}
+
+.case-hero__visual .portfolio-image-trigger__label svg {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+}
+
+.case-hero__visual .portfolio-image-trigger__label > span {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+
+/* Keep the text-link appearance on hover and keyboard focus */
+
+.case-hero__visual .portfolio-image-trigger:hover
+  .portfolio-image-trigger__label,
+.case-hero__visual .portfolio-image-trigger:focus-visible
+  .portfolio-image-trigger__label {
+  color: var(--color-primary-hover, #0058b5);
+  background: transparent;
+}
+
+
+/* Visible keyboard focus around the complete clickable image */
+
+.case-hero__visual .portfolio-image-trigger:focus-visible {
+  outline: 3px solid var(--color-primary, #0067d2);
+  outline-offset: 5px;
+}
+
+
+/* 6. Light styling for the enlarged image viewer */
+
+#portfolio-image-viewer {
+  border-color: var(--color-border, #dfe7f0);
+  background: #ffffff;
+  box-shadow: 0 1.125rem 4.375rem rgb(22 50 84 / 0.14);
+}
+
+#portfolio-image-viewer::backdrop {
+  background: rgb(226 235 245 / 0.88);
+}
+
+#portfolio-image-viewer .portfolio-image-viewer__viewport {
+  background: #f5f7fa;
+}
+
+#portfolio-image-viewer button {
+  font-weight: 500;
+}
+
+#portfolio-image-viewer button[aria-pressed="true"]:not(:disabled) {
+  border-color: var(--color-primary, #0067d2);
+  color: var(--color-primary-hover, #0058b5);
+  background: var(--color-primary-soft, #eef6ff);
+}
+
+#portfolio-image-viewer button[aria-pressed="true"]:hover:not(:disabled) {
+  background: #e2efff;
+}
+
+
+/* 7. Stack the caption and enlargement cue on narrow phones */
+
+@media (max-width: 30rem) {
+  .case-hero__visual .portfolio-image-trigger {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+  }
+
+  .case-hero__visual .portfolio-image-trigger__caption {
+    margin-top: 0.75rem;
+  }
+
+  .case-hero__visual .portfolio-image-trigger__label {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+    justify-content: flex-start;
+  }
+}
+
+
+/* 8. Remove the decorative shadow when printing */
+
+@media print {
+  .case-hero__visual .portfolio-image-trigger > img {
+    box-shadow: none;
+  }
+}

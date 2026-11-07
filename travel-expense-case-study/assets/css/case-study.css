@@ -1962,3 +1962,88 @@ body.portfolio-image-viewer-open {
     box-shadow: none;
   }
 }
+
+
+
+/* ==========================================================
+   EMS — Responsive evaluation cards
+   Five columns on wide screens, then three, two, and one
+   ========================================================== */
+
+
+/* Default: one column */
+
+#successcriteria .outcome-grid--compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+
+/* Comfortable spacing inside each card */
+
+#successcriteria .outcome-grid--compact > .outcome-card {
+  min-width: 0;
+  padding: 1.25rem;
+}
+
+
+/* Consistent spacing beneath the icons */
+
+#successcriteria .outcome-card__icon {
+  margin-bottom: 1rem;
+}
+
+
+/* Readable card headings */
+
+#successcriteria .outcome-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+
+/* Readable body text and spacing between the two points */
+
+#successcriteria .outcome-card ul {
+  gap: 0.625rem;
+  margin: 0;
+  padding-inline-start: 1.125rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#successcriteria .outcome-card li {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+
+/* Two columns: approximately 672px and above */
+
+@media (min-width: 42rem) {
+  #successcriteria .outcome-grid--compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* Three columns: approximately 1024px and above */
+
+@media (min-width: 64rem) {
+  #successcriteria .outcome-grid--compact {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* Five columns: approximately 1440px and above */
+
+@media (min-width: 90rem) {
+  #successcriteria .outcome-grid--compact {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,242 @@
+/* EMS Insights and Success Metrics.
+   Append once at the END of assets/css/case-study.css. */
+
+#insights.ems-insights,
+#successcriteria.ems-metrics {
+  padding-block: clamp(3.5rem, 6vw, 5rem);
+}
+
+#insights.ems-insights .section-heading,
+#successcriteria.ems-metrics .section-heading {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#insights.ems-insights .section-heading > .eyebrow,
+#successcriteria.ems-metrics .section-heading > .eyebrow {
+  margin: 0 0 0.75rem;
+}
+
+#insights.ems-insights .section-heading > h2,
+#successcriteria.ems-metrics .section-heading > h2 {
+  margin: 0;
+}
+
+/* Four distinct insights; retain the case study's existing card styling. */
+
+#insights.ems-insights .ems-insights__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem;
+}
+
+#insights.ems-insights .ems-insights__intro > * {
+  min-width: 0;
+}
+
+#insights.ems-insights .insight-callout {
+  margin: 0;
+}
+
+#insights.ems-insights .insight-callout h3 {
+  margin: 0;
+  line-height: 1.35;
+}
+
+#insights.ems-insights .evidence-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+#insights.ems-insights .evidence-card {
+  min-width: 0;
+  padding: 1.25rem;
+}
+
+#insights.ems-insights .evidence-card__icon {
+  margin-bottom: 1rem;
+}
+
+#insights.ems-insights .evidence-card .evidence-card__source {
+  margin: 0 0 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+#insights.ems-insights .evidence-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+#insights.ems-insights .evidence-card p:not(.eyebrow) {
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+#insights.ems-insights .evidence-card__arrow {
+  margin: auto 0 0.75rem;
+  padding-top: 0.25rem;
+}
+
+/* Proposed success measures: one column by default. */
+
+#successcriteria.ems-metrics .ems-metrics__intro {
+  max-width: 70ch;
+  margin: 1rem 0 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+#successcriteria.ems-metrics .ems-metrics__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+#successcriteria.ems-metrics .ems-metric {
+  min-width: 0;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-lg, 1.25rem);
+  background: var(--color-surface, #fff);
+  box-shadow: var(--shadow-sm, 0 2px 6px rgb(16 35 63 / 0.05));
+}
+
+#successcriteria.ems-metrics .ems-metric__icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 1rem;
+  place-items: center;
+  border-radius: var(--radius-sm, 0.5rem);
+  color: var(--color-primary, #0067d2);
+  background: var(--color-primary-soft, #eef6ff);
+  font-size: 1.125rem;
+}
+
+#successcriteria.ems-metrics .ems-metric h3 {
+  margin: 0;
+  color: var(--color-text-strong, #07172f);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+
+#successcriteria.ems-metrics .ems-metric__details {
+  display: grid;
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#successcriteria.ems-metrics .ems-metric__details dt {
+  margin: 0 0 0.25rem;
+  color: var(--color-text-strong, #07172f);
+  font-weight: 650;
+}
+
+#successcriteria.ems-metrics .ems-metric__details dd {
+  margin: 0;
+  color: var(--color-text-muted, #53657a);
+  overflow-wrap: anywhere;
+}
+
+#successcriteria.ems-metrics .ems-metrics__checks {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-md, 0.875rem);
+  color: var(--color-text-muted, #53657a);
+  background: var(--color-primary-softer, #f6faff);
+  font-size: 1rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+#successcriteria.ems-metrics .ems-metrics__checks p {
+  margin: 0;
+}
+
+#successcriteria.ems-metrics .ems-metrics__checks p + p {
+  margin-top: 0.75rem;
+}
+
+#successcriteria.ems-metrics .ems-metrics__checks strong,
+#successcriteria.ems-metrics .ems-metrics__questions strong {
+  color: var(--color-text-strong, #07172f);
+  font-weight: 650;
+}
+
+#successcriteria.ems-metrics .ems-metrics__questions {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border, #dfe7f0);
+  color: var(--color-text-muted, #53657a);
+  font-size: 1rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+#successcriteria.ems-metrics .ems-metrics__questions h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+#successcriteria.ems-metrics .ems-metrics__questions p {
+  margin: 0 0 0.75rem;
+}
+
+#successcriteria.ems-metrics .ems-metrics__questions ul {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding-inline-start: 1.25rem;
+}
+
+@media (min-width: 42rem) {
+  #insights.ems-insights .evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 48rem) {
+  #successcriteria.ems-metrics .ems-metrics__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  #insights.ems-insights .ems-insights__intro {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  #insights.ems-insights .evidence-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media print {
+  #insights.ems-insights,
+  #successcriteria.ems-metrics {
+    padding-block: 2rem;
+  }
+
+  #successcriteria.ems-metrics .ems-metric {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+}

@@ -427,20 +427,8 @@
           </ol>
         </section>
       </div>
-
-      <p class="ems-workflow__safeguard">
-        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
-        <span>
-          <strong>Policy safeguard:</strong> Requests with policy exceptions
-          are excluded from bulk approval and follow individual review.
-        </span>
-      </p>
-    </section>
-
-    <p class="ems-workflow__caption">
-      Workflow mapped for this case study from the original experience and the
-      redesign. Front-end code was merged; API integration was pending when I left.
-    </p>
+ 
+    </section> 
   </div>
 </section>
 
@@ -644,137 +632,7 @@
       </div>
     </section>-->
 
-	  <section
-		  class="section ems-delivery"
-		  id="delivery"
-		  data-section
-		  aria-labelledby="delivery-title"
-		>
-		  <div class="container">
-		    <header class="ems-delivery__heading">
-		      <p class="eyebrow">Design to code</p>
-		
-		      <h2 id="delivery-title">From design to implementation</h2>
-		
-		      <p class="ems-delivery__summary">
-		        I translated the approved dashboard design into the existing
-		        product front end.
-		      </p>
-		    </header>
-		
-		    <div class="ems-delivery__panel">
-		      <ol
-		        class="ems-delivery__steps"
-		        role="list"
-		        aria-label="Delivery stages"
-		      >
-		        <li class="ems-delivery__step">
-		          <div class="ems-delivery__meta" aria-hidden="true">
-		            <span class="ems-delivery__icon">
-		              <i class="fa-brands fa-figma"></i>
-		            </span>
-		          </div>
-		
-		          <h3 class="ems-delivery__title">Design approved</h3>
-		
-		          <p class="ems-delivery__description">
-		            Reviewed dashboard design in Figma.
-		          </p>
-		        </li>
-		
-		        <li class="ems-delivery__step">
-		          <div class="ems-delivery__meta" aria-hidden="true">
-		            <span class="ems-delivery__icon">
-		              <i class="fa-solid fa-code"></i>
-		            </span>
-		          </div>
-		
-		          <h3 class="ems-delivery__title">Front end built</h3>
-		
-		          <p class="ems-delivery__description">
-		            HTML5, Bootstrap, CSS and JavaScript.
-		          </p>
-		        </li>
-		
-		        <li class="ems-delivery__step">
-		          <div class="ems-delivery__meta" aria-hidden="true">
-		            <span class="ems-delivery__icon">
-		              <i class="fa-solid fa-code-merge"></i>
-		            </span>
-		          </div>
-		
-		          <h3 class="ems-delivery__title">Code merged</h3>
-		
-		          <p class="ems-delivery__description">
-		            Added to the existing product codebase.
-		          </p>
-		        </li>
-		      </ol> 
-		    </div>
-		  </div>
-		</section>
-
 	  
-    <section class="section section--alt" id="reflection" data-section aria-labelledby="reflection-title">
-      <div class="container">
-        <div class="section-heading reveal">
-           <!-- <span class="section-heading__number">07</span> -->
-          <div>
-            <p class="eyebrow">Reflection</p>
-            <h2 id="reflection-title">What this work reinforced for me</h2>
-          </div>
-        </div>
-
-        <div class="learning-grid reveal">
-          <article class="learning-card">
-            <span><i class="fa-regular fa-lightbulb" aria-hidden="true"></i></span>
-            <h3>Prioritisation is the product</h3>
-            <p>An approval dashboard should help users decide what to do next, not simply display more information.</p>
-          </article>
-          <article class="learning-card">
-            <span><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span>
-            <h3>Risk needs distinct semantics</h3>
-            <p>Ageing and policy exceptions represent different reasons for attention and should not share one generic status.</p>
-          </article>
-          <article class="learning-card">
-            <span><i class="fa-solid fa-shield" aria-hidden="true"></i></span>
-            <h3>Efficiency needs guardrails</h3>
-            <p>Bulk actions are useful only when eligibility, scope, confirmation, and exception handling are explicit.</p>
-          </article>
-          <article class="learning-card">
-            <span><i class="fa-solid fa-flask" aria-hidden="true"></i></span>
-            <h3>I would validate further</h3>
-            <p>Ageing comprehension, bulk-selection scope, exclusions, permissions, API failures, and accessible operation.</p>
-          </article>
-        </div>
-
-        <div class="validation-panel reveal">
-          <div>
-            <p class="eyebrow">Before a client rollout</p>
-            <h3>I would test the integrated experience with real approvers</h3>
-          </div>
-          <ul class="validation-list">
-            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Identify the report requiring immediate attention</li>
-            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Explain why a report is flagged</li>
-            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Bulk approve eligible reports without selecting exceptions</li>
-            <li><i class="fa-solid fa-arrow-right" aria-hidden="true"></i> Recover from loading, permission, and partial-failure conditions</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="project-navigation" aria-label="Project navigation">
-      <div class="container project-navigation__inner">
-        <a class="project-navigation__link" href="https://gaurankpatil.github.io/index.html">
-          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          <span>
-            <small>Back to</small>
-            <strong>All projects</strong>
-          </span>
-        </a> 
-      </div>
-    </section>
-
 	<section
 	  class="section ems-validation"
 	  id="validation"
@@ -783,7 +641,7 @@
 	>
 	  <div class="container">
 	    <header class="section-heading">
-	      <p class="eyebrow">User validation</p>
+	      <p class="eyebrow">User validation before a client rollout</p>
 	      <h2 id="validation-title">How I would validate the approval workflow</h2>
 	      <p class="ems-validation__intro">
 	        <strong>Proposed validation after integration.</strong>
@@ -857,8 +715,88 @@
 	    </p>
 	  </div>
 	</section>
-
 	  
+     <section
+		  class="section ems-delivery"
+		  id="delivery"
+		  data-section
+		  aria-labelledby="delivery-title"
+		>
+		  <div class="container">
+		    <header class="ems-delivery__heading">
+		      <p class="eyebrow">Design to code</p>
+		
+		      <h2 id="delivery-title">From design to implementation</h2>
+		
+		      <p class="ems-delivery__summary">
+		        I translated the approved dashboard design into the existing
+		        product front end.
+		      </p>
+		    </header>
+		
+		    <div class="ems-delivery__panel">
+		      <ol
+		        class="ems-delivery__steps"
+		        role="list"
+		        aria-label="Delivery stages"
+		      >
+		        <li class="ems-delivery__step">
+		          <div class="ems-delivery__meta" aria-hidden="true">
+		            <span class="ems-delivery__icon">
+		              <i class="fa-brands fa-figma"></i>
+		            </span>
+		          </div>
+		
+		          <h3 class="ems-delivery__title">Design approved</h3>
+		
+		          <p class="ems-delivery__description">
+		            Reviewed dashboard design in Figma.
+		          </p>
+		        </li>
+		
+		        <li class="ems-delivery__step">
+		          <div class="ems-delivery__meta" aria-hidden="true">
+		            <span class="ems-delivery__icon">
+		              <i class="fa-solid fa-code"></i>
+		            </span>
+		          </div>
+		
+		          <h3 class="ems-delivery__title">Front end built</h3>
+		
+		          <p class="ems-delivery__description">
+		            HTML5, Bootstrap, CSS and JavaScript.
+		          </p>
+		        </li>
+		
+		        <li class="ems-delivery__step">
+		          <div class="ems-delivery__meta" aria-hidden="true">
+		            <span class="ems-delivery__icon">
+		              <i class="fa-solid fa-code-merge"></i>
+		            </span>
+		          </div>
+		
+		          <h3 class="ems-delivery__title">Code merged</h3>
+		
+		          <p class="ems-delivery__description">
+		            Added to the existing product codebase.
+		          </p>
+		        </li>
+		      </ol> 
+		    </div>
+		  </div>
+		</section>
+
+    <section class="project-navigation" aria-label="Project navigation">
+      <div class="container project-navigation__inner">
+        <a class="project-navigation__link" href="https://gaurankpatil.github.io/index.html">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          <span>
+            <small>Back to</small>
+            <strong>All projects</strong>
+          </span>
+        </a> 
+      </div>
+    </section> 
   </main>
 
   <footer class="site-footer">

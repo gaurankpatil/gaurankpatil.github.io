@@ -1,0 +1,154 @@
+/* EMS validation. Append once at the end of assets/css/case-study.css. */
+
+#validation.ems-validation {
+  padding-block: clamp(3.5rem, 6vw, 5rem);
+  border-top: 1px solid var(--color-border, #dfe7f0);
+  background: var(--color-surface, #fff);
+}
+
+#validation.ems-validation .section-heading {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#validation.ems-validation .section-heading > .eyebrow {
+  margin: 0 0 0.75rem;
+}
+
+#validation.ems-validation .section-heading > h2 {
+  margin: 0;
+}
+
+#validation.ems-validation .ems-validation__intro {
+  max-width: 75ch;
+  margin: 1rem 0 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+#validation.ems-validation .ems-validation__intro strong {
+  color: var(--color-text-strong, #07172f);
+  font-weight: 650;
+}
+
+#validation.ems-validation .ems-validation__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#validation.ems-validation .ems-validation__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-lg, 1.25rem);
+  background: var(--color-surface, #fff);
+  box-shadow: var(--shadow-sm, 0 2px 6px rgb(16 35 63 / 0.05));
+}
+
+#validation.ems-validation .ems-validation__number {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  margin-bottom: 1rem;
+  place-items: center;
+  border-radius: var(--radius-sm, 0.5rem);
+  color: var(--color-primary, #0067d2);
+  background: var(--color-primary-soft, #eef6ff);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#validation.ems-validation .ems-validation__card h3 {
+  margin: 0;
+  color: var(--color-text-strong, #07172f);
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+
+#validation.ems-validation .ems-validation__description,
+#validation.ems-validation .ems-validation__detail {
+  color: var(--color-text-muted, #53657a);
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+#validation.ems-validation .ems-validation__description {
+  margin: 1rem 0;
+}
+
+#validation.ems-validation .ems-validation__detail {
+  margin: auto 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border, #dfe7f0);
+}
+
+#validation.ems-validation .ems-validation__detail strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-strong, #07172f);
+  font-weight: 650;
+}
+
+#validation.ems-validation .ems-validation__note {
+  margin: 1.5rem 0 0;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-md, 0.875rem);
+  color: var(--color-text-muted, #53657a);
+  background: var(--color-primary-softer, #f6faff);
+  font-size: 1rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+#validation.ems-validation .ems-validation__note a {
+  color: var(--color-primary, #0067d2);
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+#validation.ems-validation .ems-validation__note a:hover {
+  color: var(--color-primary-hover, #0058b5);
+}
+
+#validation.ems-validation .ems-validation__note a:focus-visible {
+  outline: 3px solid var(--color-primary, #0067d2);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (min-width: 48rem) {
+  #validation.ems-validation .ems-validation__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 75rem) {
+  #validation.ems-validation .ems-validation__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media print {
+  #validation.ems-validation {
+    padding-block: 2rem;
+  }
+
+  #validation.ems-validation .ems-validation__card {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+}

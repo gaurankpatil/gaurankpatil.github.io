@@ -274,6 +274,174 @@
         </div> 
     </section>
 
+<section
+  class="section section--alt ems-workflow"
+  id="workflow"
+  data-section
+  aria-labelledby="workflow-title"
+>
+  <div class="container">
+    <header class="ems-workflow__heading">
+      <p class="eyebrow">Approval workflow</p>
+      <h2 id="workflow-title">How the approval workflow changed</h2>
+      <p class="ems-workflow__intro">
+        Previously, approvers opened each expense report to gather the details
+        needed for a decision. The redesign brings decision context into the
+        dashboard and supports a separate route for eligible bulk approvals.
+      </p>
+    </header>
+
+    <section class="ems-workflow__panel" aria-labelledby="workflow-before-title">
+      <header class="ems-workflow__panel-heading">
+        <p class="ems-workflow__label">Before</p>
+        <h3 id="workflow-before-title">Review one report at a time</h3>
+      </header>
+
+      <ol class="ems-workflow__linear ems-workflow__linear--before" role="list">
+        <li class="ems-workflow__step">
+          <span class="ems-workflow__number" aria-hidden="true">01</span>
+          <div>
+            <strong>Log in</strong>
+            <p>Enter the application.</p>
+          </div>
+          <span class="ems-workflow__connector" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </li>
+        <li class="ems-workflow__step">
+          <span class="ems-workflow__number" aria-hidden="true">02</span>
+          <div>
+            <strong>Arrive at the old dashboard</strong>
+            <p>See category cards and pending expenses.</p>
+          </div>
+          <span class="ems-workflow__connector" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </li>
+        <li class="ems-workflow__step ems-workflow__step--emphasis">
+          <span class="ems-workflow__number" aria-hidden="true">03</span>
+          <div>
+            <strong>Open each report</strong>
+            <p>Read the details needed to make a decision.</p>
+          </div>
+          <span class="ems-workflow__connector" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </li>
+        <li class="ems-workflow__step">
+          <span class="ems-workflow__number" aria-hidden="true">04</span>
+          <div>
+            <strong>Approve or reject</strong>
+            <p>Decide after reviewing that report.</p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="ems-workflow__repeat">
+        <i class="fa-solid fa-arrow-rotate-left" aria-hidden="true"></i>
+        <span>Repeat the report review and decision for each pending expense.</span>
+      </p>
+    </section>
+
+    <section
+      class="ems-workflow__panel ems-workflow__panel--after"
+      aria-labelledby="workflow-after-title"
+    >
+      <header class="ems-workflow__panel-heading">
+        <p class="ems-workflow__label">Redesigned flow</p>
+        <h3 id="workflow-after-title">Start with context, then choose a review path</h3>
+      </header>
+
+      <ol class="ems-workflow__linear ems-workflow__linear--after" role="list">
+        <li class="ems-workflow__step">
+          <span class="ems-workflow__number" aria-hidden="true">01</span>
+          <div>
+            <strong>Log in</strong>
+            <p>Enter the application.</p>
+          </div>
+          <span class="ems-workflow__connector" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </li>
+        <li class="ems-workflow__step">
+          <span class="ems-workflow__number" aria-hidden="true">02</span>
+          <div>
+            <strong>Arrive at the redesigned dashboard</strong>
+            <p>See category cards and report summaries.</p>
+          </div>
+          <span class="ems-workflow__connector" aria-hidden="true">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </li>
+        <li class="ems-workflow__step ems-workflow__step--emphasis">
+          <span class="ems-workflow__number" aria-hidden="true">03</span>
+          <div>
+            <strong>Review summaries</strong>
+            <p>Check the amount, pending duration and policy state.</p>
+          </div>
+        </li>
+      </ol>
+
+      <p class="ems-workflow__choice">
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        <strong>Choose the appropriate review path</strong>
+      </p>
+
+      <div class="ems-workflow__routes" role="group" aria-label="Alternative review paths">
+        <section class="ems-workflow__route" aria-labelledby="workflow-individual-title">
+          <h4 id="workflow-individual-title">Review individually</h4>
+          <ol class="ems-workflow__route-steps">
+            <li>
+              <strong>Review one request</strong>
+              <p>Use the amount, age and policy context in the summary.</p>
+            </li>
+            <li>
+              <strong>Open details when needed</strong>
+              <p>Inspect the report when it requires closer review.</p>
+            </li>
+            <li>
+              <strong>Approve or reject</strong>
+              <p>Make the decision after review.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="ems-workflow__route" aria-labelledby="workflow-bulk-title">
+          <h4 id="workflow-bulk-title">Approve eligible requests together</h4>
+          <ol class="ems-workflow__route-steps">
+            <li>
+              <strong>Open the bulk-approval view</strong>
+              <p>Use the View All / Bulk Approval entry point.</p>
+            </li>
+            <li>
+              <strong>Select eligible requests</strong>
+              <p>Limit selection to the current page.</p>
+            </li>
+            <li>
+              <strong>Confirm approval</strong>
+              <p>Review the selected requests before confirming.</p>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <p class="ems-workflow__safeguard">
+        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        <span>
+          <strong>Policy safeguard:</strong> Requests with policy exceptions
+          are excluded from bulk approval and follow individual review.
+        </span>
+      </p>
+    </section>
+
+    <p class="ems-workflow__caption">
+      Workflow mapped for this case study from the original experience and the
+      redesign. Front-end code was merged; API integration was pending when I left.
+    </p>
+  </div>
+</section>
+
+	  
 	<section class="section" id="successcriteria" data-section aria-labelledby="successcriteria">
 		<div class="container">	
 			<div class="section-heading reveal">

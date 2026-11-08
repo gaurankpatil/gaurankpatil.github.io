@@ -5,8 +5,8 @@
   const header = document.querySelector('[data-site-header]');
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const primaryNav = document.querySelector('[data-primary-nav]');
-  const caseNav = document.querySelector('[data-case-nav]');
-  const backToTop = document.querySelector('[data-back-to-top]');
+const caseNav = document.querySelector('[data-case-nav]');
+const caseNavScroller = caseNav?.querySelector('.case-nav__inner');  const backToTop = document.querySelector('[data-back-to-top]');
   const yearNode = document.querySelector('[data-current-year]');
   const imageDialog = document.querySelector('[data-image-dialog]');
   const dialogImage = imageDialog?.querySelector('[data-dialog-image]');
@@ -139,58 +139,86 @@
     revealNodes.forEach((node) => revealObserver.observe(node));
   }
 
-  if (caseNav && 'IntersectionObserver' in window) {
-    const links = Array.from(caseNav.querySelectorAll('a[href^="#"]'));
-    const linkById = new Map(
-      links.map((link) => [link.getAttribute('href').slice(1), link])
+if (caseNav && 'IntersectionObserver' in window) {
+  const links = Array.from(caseNav.querySelectorAll('a[href^="#"]'));
+  const linkById = new Map(
+    links.map((link) => [link.getAttribute('href').slice(1), link])
+  );
+  const sections = Array.from(document.querySelectorAll('[data-section]'));
+
+  // Move only the horizontal navigation rail, never the document viewport.
+  const keepActiveLinkVisible = (link) => {
+    if (!caseNavScroller) return;
+
+    const railRect = caseNavScroller.getBoundingClientRect();
+    const linkRect = link.getBoundingClientRect();
+    const visibleLeft = railRect.left + caseNavScroller.clientLeft;
+    const visibleRight = visibleLeft + caseNavScroller.clientWidth;
+    let horizontalDelta = 0;
+
+    if (linkRect.left < visibleLeft) {
+      horizontalDelta = linkRect.left - visibleLeft;
+    } else if (linkRect.right > visibleRight) {
+      horizontalDelta = linkRect.right - visibleRight;
+    }
+
+    if (Math.abs(horizontalDelta) < 1) return;
+
+    const maxScroll = Math.max(
+      0,
+      caseNavScroller.scrollWidth - caseNavScroller.clientWidth
     );
-    const sections = Array.from(document.querySelectorAll('[data-section]'));
-
-    const activateLink = (sectionId, shouldScrollNavigation = true) => {
-      links.forEach((link) => {
-        const isActive = link === linkById.get(sectionId);
-        link.classList.toggle('is-active', isActive);
-
-        if (isActive) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-
-      const activeLink = linkById.get(sectionId);
-      if (activeLink && shouldScrollNavigation) {
-        activeLink.scrollIntoView({
-          behavior: prefersReducedMotion() ? 'auto' : 'smooth',
-          block: 'nearest',
-          inline: 'center'
-        });
-      }
-    };
-
-    const sectionObserver = new IntersectionObserver(
-      (entries) => {
-        const visibleSections = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-
-        if (visibleSections[0]) {
-          activateLink(visibleSections[0].target.id);
-        }
-      },
-      {
-        rootMargin: '-32% 0px -55% 0px',
-        threshold: [0.05, 0.15, 0.35, 0.65]
-      }
+    const nextLeft = Math.min(
+      maxScroll,
+      Math.max(0, caseNavScroller.scrollLeft + horizontalDelta)
     );
 
-    sections.forEach((section) => sectionObserver.observe(section));
-
-    links.forEach((link) => {
-      link.addEventListener('click', () => {
-        const sectionId = link.getAttribute('href').slice(1);
-        activateLink(sectionId, false);
-      });
+    caseNavScroller.scrollTo({
+      left: nextLeft,
+      behavior: prefersReducedMotion() ? 'auto' : 'smooth'
     });
-  }
+  };
 
+  const activateLink = (sectionId, shouldRevealInNav = true) => {
+    links.forEach((link) => {
+      const isActive = link === linkById.get(sectionId);
+      link.classList.toggle('is-active', isActive);
+
+      if (isActive) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+
+    const activeLink = linkById.get(sectionId);
+    if (activeLink && shouldRevealInNav) {
+      keepActiveLinkVisible(activeLink);
+    }
+  };
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      const visibleSections = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+      if (visibleSections[0]) {
+        activateLink(visibleSections[0].target.id);
+      }
+    },
+    {
+      rootMargin: '-32% 0px -55% 0px',
+      threshold: [0.05, 0.15, 0.35, 0.65]
+    }
+  );
+
+  sections.forEach((section) => sectionObserver.observe(section));
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      const sectionId = link.getAttribute('href').slice(1);
+      activateLink(sectionId, false);
+    });
+  });
+}
   const restoreDialogFocus = () => {
     if (lastDialogTrigger instanceof HTMLElement) {
       lastDialogTrigger.focus();

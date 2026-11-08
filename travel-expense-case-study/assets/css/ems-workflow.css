@@ -1,0 +1,284 @@
+/* EMS workflow section. Append at the end of assets/css/case-study.css. */
+
+#workflow.ems-workflow {
+  padding-block: clamp(3.5rem, 6vw, 5rem);
+  background: var(--color-surface-alt, #f7f9fc);
+}
+
+#workflow.ems-workflow .ems-workflow__heading {
+  margin-bottom: 2rem;
+}
+
+#workflow.ems-workflow .ems-workflow__heading > .eyebrow {
+  margin: 0 0 0.75rem;
+}
+
+#workflow.ems-workflow .ems-workflow__heading > h2 {
+  margin: 0;
+}
+
+#workflow.ems-workflow .ems-workflow__intro {
+  max-width: 75ch;
+  margin: 1rem 0 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+#workflow.ems-workflow .ems-workflow__panel {
+  min-width: 0;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-lg, 1.25rem);
+  background: var(--color-surface, #fff);
+}
+
+#workflow.ems-workflow .ems-workflow__panel + .ems-workflow__panel {
+  margin-top: 1.5rem;
+}
+
+#workflow.ems-workflow .ems-workflow__panel-heading {
+  margin-bottom: 1.5rem;
+}
+
+#workflow.ems-workflow .ems-workflow__label {
+  margin: 0 0 0.5rem;
+  color: var(--color-primary, #0067d2);
+  font-size: 0.8125rem;
+  font-weight: 750;
+  line-height: 1.45;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+#workflow.ems-workflow .ems-workflow__panel h3 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.3;
+}
+
+/* Reading order is vertical by default. */
+
+#workflow.ems-workflow .ems-workflow__linear {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#workflow.ems-workflow .ems-workflow__step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  align-items: start;
+  gap: 0.75rem;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-sm, 0.5rem);
+  background: var(--color-surface-alt, #f7f9fc);
+}
+
+#workflow.ems-workflow .ems-workflow__step--emphasis {
+  border-color: var(--color-border-strong, #c9d5e3);
+  background: var(--color-primary-soft, #eef6ff);
+}
+
+#workflow.ems-workflow .ems-workflow__step > div {
+  min-width: 0;
+}
+
+#workflow.ems-workflow .ems-workflow__number {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 0.375rem;
+  color: var(--color-primary, #0067d2);
+  background: var(--color-surface, #fff);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#workflow.ems-workflow .ems-workflow__step strong {
+  display: block;
+  color: var(--color-text-strong, #07172f);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+#workflow.ems-workflow .ems-workflow__step p {
+  margin: 0.375rem 0 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 1rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+#workflow.ems-workflow .ems-workflow__connector {
+  position: absolute;
+  inset-inline-start: 1.5rem;
+  inset-block-end: -1.25rem;
+  display: grid;
+  width: 1rem;
+  height: 1rem;
+  place-items: center;
+  transform: rotate(90deg);
+  color: var(--color-text-muted, #53657a);
+  font-size: 0.875rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+#workflow.ems-workflow .ems-workflow__repeat,
+#workflow.ems-workflow .ems-workflow__safeguard {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+#workflow.ems-workflow .ems-workflow__repeat > i,
+#workflow.ems-workflow .ems-workflow__safeguard > i {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: var(--color-primary, #0067d2);
+}
+
+#workflow.ems-workflow .ems-workflow__repeat > span,
+#workflow.ems-workflow .ems-workflow__safeguard > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+#workflow.ems-workflow .ems-workflow__choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  margin: 1.5rem 0 1rem;
+  color: var(--color-text-strong, #07172f);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#workflow.ems-workflow .ems-workflow__choice > i {
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  color: var(--color-primary, #0067d2);
+}
+
+#workflow.ems-workflow .ems-workflow__routes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+#workflow.ems-workflow .ems-workflow__route {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border, #dfe7f0);
+  border-radius: var(--radius-md, 0.875rem);
+  background: var(--color-primary-softer, #f6faff);
+}
+
+#workflow.ems-workflow .ems-workflow__route h4 {
+  margin: 0 0 1rem;
+  color: var(--color-text-strong, #07172f);
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+
+#workflow.ems-workflow .ems-workflow__route-steps {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+#workflow.ems-workflow .ems-workflow__route-steps li {
+  min-width: 0;
+  padding-inline-start: 0.25rem;
+  overflow-wrap: anywhere;
+}
+
+#workflow.ems-workflow .ems-workflow__route-steps li::marker {
+  color: var(--color-primary, #0067d2);
+  font-weight: 650;
+}
+
+#workflow.ems-workflow .ems-workflow__route-steps strong,
+#workflow.ems-workflow .ems-workflow__safeguard strong {
+  color: var(--color-text-strong, #07172f);
+  font-weight: 650;
+}
+
+#workflow.ems-workflow .ems-workflow__route-steps p {
+  margin: 0.25rem 0 0;
+  color: var(--color-text-muted, #53657a);
+}
+
+#workflow.ems-workflow .ems-workflow__safeguard {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border, #dfe7f0);
+}
+
+#workflow.ems-workflow .ems-workflow__caption {
+  max-width: 90ch;
+  margin: 1rem 0 0;
+  color: var(--color-text-muted, #53657a);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 48rem) {
+  #workflow.ems-workflow .ems-workflow__routes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 60rem) {
+  #workflow.ems-workflow .ems-workflow__linear--before {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #workflow.ems-workflow .ems-workflow__linear--after {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #workflow.ems-workflow .ems-workflow__step {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+
+  #workflow.ems-workflow .ems-workflow__connector {
+    inset-inline-start: auto;
+    inset-inline-end: -1.25rem;
+    inset-block-start: 1.5rem;
+    inset-block-end: auto;
+    transform: none;
+  }
+}
+
+@media print {
+  #workflow.ems-workflow {
+    padding-block: 2rem;
+  }
+
+  #workflow.ems-workflow .ems-workflow__step,
+  #workflow.ems-workflow .ems-workflow__route {
+    break-inside: avoid;
+  }
+}

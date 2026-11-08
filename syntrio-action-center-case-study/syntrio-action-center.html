@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="assets/css/action-center-case-study.css">
 
   <script src="assets/js/case-study.js" defer></script>
-
+<script src="assets/js/image-viewer.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,12 +90,12 @@
     <section class="case-hero case-hero--action-center" id="overview" aria-labelledby="case-title">
       <div class="container case-hero__grid">
         <div class="case-hero__content reveal">
-          <p class="eyebrow">Enterprise SaaS · Ethics &amp; Compliance · AI-assisted</p> >
+          <p class="eyebrow">Enterprise SaaS · Ethics &amp; Compliance</p> 
 
           <h1 id="case-title">Risk Action Center: Turning Incident Signals into Preventive Compliance Action</h1>
 
           <p class="case-hero__summary">
-            A concept proposal that brought incident oversight, organisational trends, active case work, and human-reviewed training and policy guidance into one compliance workspace.
+            Dashboard that brought incident oversight, organisational trends, active case work, and human-reviewed training and policy guidance into one compliance workspace.
           </p>
 
           <ul class="case-hero__facts" aria-label="Project summary">
@@ -116,29 +116,27 @@
               <span>Scope: incident oversight, trends, recommendations, recent activity, and preventive-action framing</span>
             </li>
           </ul>
-
-          <div class="concept-disclosure">
-            <i class="fa-solid fa-lock" aria-hidden="true"></i>
-            <p>
-              Only the Action Center dashboard is shown publicly. Detailed incident-management, training, policy, permissions, and administrative workflows remain internal and confidential.
-            </p>
-          </div>
         </div>
 
-        <figure class="case-hero__visual reveal m-0">
-          <a
-            class="screen-frame hero-product-frame zoom-link"
-            href="assets/images/action-center/action-center-overview.webp"
-            data-zoom-link
-            data-zoom-caption="Risk Action Center concept showing organisational filters, current metrics, incident trends, category analysis, and the start of the incident queue."
-          >
-            <img
-              src="assets/images/action-center/action-center-overview.webp"
-              width="2048"
-              height="1285"
-              alt="Risk Action Center concept with organisational filters, report metrics, incident trend chart, category chart, and incident queue"
-            >
-          </a> 
+         <figure class="case-hero__visual reveal m-0">
+          <div class="screen-frame hero-product-frame">
+            <a class="portfolio-image-trigger"
+              href="assets/images/action-center/action-center-overview.webp"
+              data-image-viewer
+              data-image-title="Risk Action Center concept dashboard"
+              target="_blank" rel="noopener noreferrer">
+              <img
+                src="assets/images/action-center/action-center-overview.webp"
+                width="2048" height="1285"
+                fetchpriority="high" decoding="async"
+                alt="Risk Action Center concept with organisational filters, report metrics, incident trend chart, category chart, and incident queue"
+              >
+              <span class="portfolio-image-trigger__label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5M3 3l6 6M21 3l-6 6M21 21l-6-6M3 21l6-6"/></svg>
+                <span>View full size</span>
+              </span>
+            </a>
+          </div>
         </figure>
       </div>
     </section>
@@ -156,62 +154,15 @@
         <a href="#outcome">Outcome</a>
         <a href="#reflection">Reflection</a>
       </div>
-    </nav>
-
-    <section class="section section--compact" id="project-overview" data-section aria-labelledby="project-overview-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-heading__number">01</span>
-          <div>
-            <p class="eyebrow">Project at a glance</p>
-            <h2 id="project-overview-title">Exploring a connected starting point for compliance operations</h2>
-          </div>
-        </div>
-
-        <dl class="fact-grid reveal">
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Product</dt>
-            <dd>Syntrio Action Center</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-building" aria-hidden="true"></i> Company</dt>
-            <dd>Mitratech</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-regular fa-user" aria-hidden="true"></i> Role</dt>
-            <dd>Product Designer · concept and prototype contributor</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-user-shield" aria-hidden="true"></i> Primary user</dt>
-            <dd>Compliance or Ethics Programme Manager</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-bullseye" aria-hidden="true"></i> Scope</dt>
-            <dd>Incident oversight, trends, recommendations, recent activity, and preventive-action concept</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-desktop" aria-hidden="true"></i> Public evidence</dt>
-            <dd>One high-fidelity desktop Action Center design shown through full views and crops</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-code-branch" aria-hidden="true"></i> Status</dt>
-            <dd>Concept and prototype proposal; not implemented or released</dd>
-          </div>
-          <div class="fact-card">
-            <dt><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Confidentiality</dt>
-            <dd>Related product workflows are discussed at system level but not shown</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
+    </nav> 
+    
     <section class="section section--alt" id="problem" data-section aria-labelledby="problem-title">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="section-heading__number">02</span>
+         <!-- <span class="section-heading__number">02</span> -->
           <div>
             <p class="eyebrow">Product opportunity</p>
-            <h2 id="problem-title">Incident data showed what had happened—but not always what the organisation should do next</h2>
+            <h2 id="problem-title">Incident data showed what had happened but not always what the organisation should do next</h2>
           </div>
         </div>
 

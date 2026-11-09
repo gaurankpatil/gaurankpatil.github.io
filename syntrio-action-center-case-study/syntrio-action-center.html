@@ -785,6 +785,7 @@
               <h3>Keep recommendations explainable, advisory, and under human control</h3>
               <p>
                 The dashboard included AI-labelled training and policy suggestions, but it did not visibly explain their basis, source, time period, affected audience, or available user action.
+                AI suggests relevant training or policy guidance and explains why it made the suggestion which helps user to review and take appropriate actions.
               </p>
               <dl class="decision-rationale">
                 <div>
@@ -823,124 +824,8 @@
           </article>
         </div>
       </div>
-    </section>
-
-    <section class="section section--alt" id="responsible-ai" data-section aria-labelledby="responsible-ai-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="section-heading__number">06</span>
-          <div>
-            <p class="eyebrow">Responsible product model</p>
-            <h2 id="responsible-ai-title">AI could surface relevance—but responsibility remained with people</h2>
-          </div>
-        </div>
-
-        <div class="split-layout split-layout--balanced">
-          <div class="prose reveal">
-            <p class="lead">
-              The original screen used an AI label, but the proposal did not progress far enough to establish a production AI architecture.
-            </p>
-            <p>
-              A credible first version would begin with transparent mappings between approved incident categories and approved learning or policy content. AI could then be evaluated as an extension for ranking, pattern summarisation, semantic retrieval, and plain-language explanation.
-            </p>
-            <p>
-              The choice to introduce AI should follow a demonstrated relevance problem—not the presence of an “AI-powered” heading.
-            </p>
-          </div>
-
-          <figure class="media-card reveal">
-            <a
-              class="zoom-link"
-              href="assets/images/action-center/action-center-activity.webp"
-              data-zoom-link
-              data-zoom-caption="Recent activity provides operational awareness, while a complete audit model would need explicit actors, timestamps, previous and new values, and permission boundaries."
-            >
-              <img
-                src="assets/images/action-center/action-center-activity.webp"
-                width="592"
-                height="930"
-                loading="lazy"
-                alt="Syntrio Action Center recent activity panel with synthetic user names and case events"
-              >
-            </a>
-            <figcaption>Recent activity is useful context, but it should not be mistaken for a complete audit history.</figcaption>
-          </figure>
-        </div>
-
-        <div class="recommendation-model reveal" aria-label="Human-reviewed recommendation model">
-          <div class="recommendation-model__step">
-            <div>
-              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
-              <strong>Permitted aggregate signal</strong>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right recommendation-model__arrow" aria-hidden="true"></i>
-          <div class="recommendation-model__step">
-            <div>
-              <i class="fa-solid fa-book-open" aria-hidden="true"></i>
-              <strong>Approved content source</strong>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right recommendation-model__arrow" aria-hidden="true"></i>
-          <div class="recommendation-model__step">
-            <div>
-              <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
-              <strong>Why suggested</strong>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right recommendation-model__arrow" aria-hidden="true"></i>
-          <div class="recommendation-model__step recommendation-model__step--human">
-            <div>
-              <i class="fa-solid fa-user-check" aria-hidden="true"></i>
-              <strong>Human review</strong>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right recommendation-model__arrow" aria-hidden="true"></i>
-          <div class="recommendation-model__step">
-            <div>
-              <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
-              <strong>Accept, modify, or dismiss</strong>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right recommendation-model__arrow" aria-hidden="true"></i>
-          <div class="recommendation-model__step recommendation-model__step--audit">
-            <div>
-              <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
-              <strong>Owner and audit record</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="principle-grid reveal" aria-label="Responsible AI and privacy principles">
-          <article class="principle-card">
-            <span><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>
-            <h3>Explainability</h3>
-            <p>Show why a suggestion appeared, the scope it relates to, and which approved source it uses.</p>
-          </article>
-          <article class="principle-card principle-card--danger">
-            <span><i class="fa-solid fa-user-secret" aria-hidden="true"></i></span>
-            <h3>Privacy</h3>
-            <p>Prefer aggregates, minimise data, protect reporter identity, and suppress signals that could expose individuals.</p>
-          </article>
-          <article class="principle-card principle-card--success">
-            <span><i class="fa-solid fa-user-check" aria-hidden="true"></i></span>
-            <h3>Human control</h3>
-            <p>No training, policy, risk, or case decision should be executed automatically.</p>
-          </article>
-          <article class="principle-card">
-            <span><i class="fa-solid fa-key" aria-hidden="true"></i></span>
-            <h3>Permissions</h3>
-            <p>Cards, charts, search, recommendations, exports, and drill-downs must share one access boundary.</p>
-          </article>
-          <article class="principle-card principle-card--success">
-            <span><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i></span>
-            <h3>Auditability</h3>
-            <p>Record the signal, recommendation version, reviewer, decision, modification, owner, and resulting action.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    </section> 
+    
     <section class="section" id="critique" data-section aria-labelledby="critique-title">
       <div class="container">
         <div class="section-heading reveal">

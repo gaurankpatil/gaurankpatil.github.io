@@ -1,7 +1,6 @@
 /* EMS validation. Append once at the end of assets/css/case-study.css. */
 
 #validation.ems-validation {
-  padding-block: clamp(3.5rem, 6vw, 5rem);
   border-top: 1px solid var(--color-border, #dfe7f0);
   background: var(--color-surface, #fff);
 }

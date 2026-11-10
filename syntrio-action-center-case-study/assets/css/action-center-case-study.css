@@ -74,20 +74,7 @@
 .hero-product-frame {
   position: relative;
 }
-
-.hero-product-frame::after {
-  position: absolute;
-  inset: auto 1.5rem 1.5rem auto;
-  padding: 0.45rem 0.7rem;
-  border-radius: var(--radius-pill);
-  color: #fff;
-  background: rgb(7 23 47 / 0.85);
-  content: "Original concept";
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
+ 
 
 .evidence-boundary-panel {
   display: grid;

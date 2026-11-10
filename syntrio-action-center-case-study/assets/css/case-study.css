@@ -464,7 +464,7 @@ ol {
 }
 
 .section {
-  padding: clamp(5rem, 9vw, 8rem) 0;
+  padding: clamp(5rem, 9vw, 5rem) 0;
 }
 
 .section--compact {

@@ -391,15 +391,6 @@ ol {
   margin-bottom: 0;
 }
 
-.screen-frame {
-  overflow: hidden;
-  padding: 0.7rem;
-  border: 1px solid #c8d6e7;
-  border-radius: var(--radius-lg);
-  background: #14243a;
-  box-shadow: var(--shadow-lg);
-}
-
 .screen-frame img {
   width: 100%;
   border-radius: calc(var(--radius-lg) - 0.5rem);

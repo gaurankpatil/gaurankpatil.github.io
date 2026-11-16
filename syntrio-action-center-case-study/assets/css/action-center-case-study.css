@@ -1672,3 +1672,232 @@
     padding: var(--space-5);
   }
 }
+
+
+/* =========================================================
+   Four-step Action Center workflow
+   ========================================================= */
+
+.workflow-section__heading {
+  max-width: 66rem;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.workflow-section__heading h2 {
+  max-width: 60rem;
+  margin-bottom: var(--space-5);
+}
+
+.workflow-section__summary {
+  max-width: 58rem;
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  line-height: 1.65;
+}
+
+/* Main workflow row */
+
+.signal-workflow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: var(--space-8);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual workflow step */
+
+.signal-workflow__step {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 17rem;
+  height: 100%;
+  flex-direction: column;
+  padding: var(--space-6);
+  border: 1px solid #cfe4fb;
+  border-top: 3px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(
+      180deg,
+      var(--color-primary-softer) 0%,
+      var(--color-surface) 38%
+    );
+  box-shadow: var(--shadow-sm);
+}
+
+/* Arrow between desktop cards */
+
+.signal-workflow__step:not(:last-child)::after {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: calc(var(--space-8) * -0.5);
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  transform: translate(50%, -50%);
+  place-items: center;
+  border: 1px solid #bfdcff;
+  border-radius: 50%;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  content: "→";
+  font-size: 1rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+/* Number and icon row */
+
+.signal-workflow__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.signal-workflow__number {
+  display: inline-grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: var(--radius-pill);
+  color: #ffffff;
+  background: var(--color-primary);
+  font-size: var(--text-sm);
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.signal-workflow__icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid #cfe4fb;
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  font-size: 1rem;
+}
+
+/* Workflow content */
+
+.signal-workflow__label {
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.signal-workflow__step h3 {
+  margin-bottom: var(--space-3);
+  font-size: clamp(1.2rem, 1.7vw, 1.45rem);
+  letter-spacing: -0.02em;
+}
+
+.signal-workflow__step > p:last-child {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+/* Evidence boundary */
+
+.workflow-boundary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-3);
+  max-width: 60rem;
+  margin-top: var(--space-8);
+  padding: var(--space-5);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--color-primary-soft);
+}
+
+.workflow-boundary__icon {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  font-size: 0.9rem;
+}
+
+.workflow-boundary p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.workflow-boundary strong {
+  color: var(--color-text-strong);
+}
+
+/* =========================================================
+   Responsive behaviour
+   ========================================================= */
+
+/* Two-column layout on tablets and smaller laptops */
+
+@media (max-width: 68rem) {
+  .signal-workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .signal-workflow__step {
+    min-height: 15rem;
+  }
+
+  /* Horizontal connectors are removed in the two-column layout */
+  .signal-workflow__step:not(:last-child)::after {
+    display: none;
+  }
+}
+
+/* Vertical sequence on mobile */
+
+@media (max-width: 42rem) {
+  .signal-workflow {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .signal-workflow__step {
+    min-height: 0;
+    padding: var(--space-5);
+  }
+
+  .signal-workflow__step:not(:last-child)::after {
+    position: absolute;
+    top: auto;
+    right: 50%;
+    bottom: calc(var(--space-8) * -0.5);
+    display: grid;
+    transform: translate(50%, 50%);
+    content: "↓";
+  }
+
+  .workflow-boundary {
+    padding: var(--space-4);
+  }
+}

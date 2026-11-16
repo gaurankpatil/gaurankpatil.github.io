@@ -1578,3 +1578,97 @@
     border-top: 1px solid var(--color-border);
   }
 }
+
+
+/* Four-card design handoff layout */
+
+.handoff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.handoff-card {
+  display: flex;
+  min-width: 0;
+  min-height: 12rem;
+  height: 100%;
+  flex-direction: column;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.handoff-card:hover {
+  transform: translateY(-3px);
+  border-color: #a9cdf5;
+  box-shadow: var(--shadow-md);
+}
+
+.handoff-card__icon {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: var(--space-5);
+  place-items: center;
+  border-radius: var(--radius-sm);
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  font-size: 1rem;
+}
+
+.handoff-card__content {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.handoff-card__content h3 {
+  margin-bottom: var(--space-3);
+  color: var(--color-text-strong);
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+}
+
+.handoff-card__content p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+/* Two cards per row on smaller laptops and tablets */
+
+@media (max-width: 70rem) {
+  .handoff-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .handoff-card {
+    min-height: 10rem;
+  }
+}
+
+/* One card per row on mobile */
+
+@media (max-width: 40rem) {
+  .handoff-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .handoff-card {
+    min-height: 0;
+    padding: var(--space-5);
+  }
+}

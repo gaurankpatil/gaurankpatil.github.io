@@ -2508,3 +2508,80 @@ body.portfolio-image-viewer-open {
     gap: 1.5rem;
   }
 }
+
+
+.legacy-annotated-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+  }
+  .legacy-stage {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+  }
+  .legacy-stage img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: contrast(0.96) brightness(0.98);
+  }
+  /* Subtle highlight frames over problem areas */
+  .ui-zone {
+    position: absolute;
+    border: 2px dashed #dc2626;
+    background: rgba(220, 38, 38, 0.06);
+    border-radius: 6px;
+    pointer-events: none;
+  }
+  /* Numbered callout badges */
+  .ui-pin {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(220, 38, 38, 0.4);
+    border: 2px solid #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  /* Clean callout legend below image */
+  .legacy-callouts {
+    display: grid;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #f1f5f9;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #334155;
+  }
+  .legacy-callout-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .legend-badge {
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+  }
